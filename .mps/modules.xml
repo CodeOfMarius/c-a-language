@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/core/core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/entities/entities.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/functions/functions.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/usecase/usecase.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/Test/Test.msd" folder="" />
     </projectModules>
   </component>

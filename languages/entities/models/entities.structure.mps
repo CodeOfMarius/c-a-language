@@ -28,6 +28,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
@@ -102,6 +103,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5sdBcUEVDmY" resolve="Attribute" />
     </node>
+    <node concept="1TJgyj" id="4higIaTkFKP" role="1TKVEi">
+      <property role="IQ2ns" value="4923070884208622645" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="associates" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5sdBcUEVFEk" resolve="EntityReference" />
+    </node>
     <node concept="PrWs8" id="5sdBcUEVGuv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -109,6 +117,7 @@
   <node concept="1TIwiD" id="5sdBcUEVDrQ">
     <property role="EcuMT" value="6272842267441927926" />
     <property role="TrG5h" value="EntitySet" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5sdBcUEVDrR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -130,6 +139,11 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5sdBcUEVDnn" resolve="Entity" />
+    </node>
+    <node concept="1TJgyi" id="4higIaTkMhq" role="1TKVEl">
+      <property role="IQ2nx" value="4923070884208649306" />
+      <property role="TrG5h" value="cardinality" />
+      <ref role="AX2Wp" node="5sdBcUEW8a5" resolve="Cardinality" />
     </node>
   </node>
   <node concept="25R3W" id="5sdBcUEW8a5">
