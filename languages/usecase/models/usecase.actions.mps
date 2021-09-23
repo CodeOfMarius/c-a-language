@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -32,6 +33,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
+        <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
+      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
@@ -53,11 +57,15 @@
         <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
       </concept>
       <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
+      <concept id="1883223317721107059" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVarReference" flags="nn" index="Jnkvi" />
       <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
         <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
         <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
@@ -129,6 +137,51 @@
             <node concept="JncvC" id="1zT$DkoZHuS" role="JncvA">
               <property role="TrG5h" value="adapter" />
               <node concept="2jxLKc" id="1zT$DkoZHuT" role="1tU5fm" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="37WguZ" id="2J$v$$XF_Mg">
+    <property role="TrG5h" value="RelationFactory" />
+    <node concept="37WvkG" id="2J$v$$XF_Mh" role="37WGs$">
+      <ref role="37XkoT" to="ljcb:5QUHtZfZ3cV" resolve="UseCaseRelation" />
+      <node concept="37Y9Zx" id="2J$v$$XF_Mi" role="37ZfLb">
+        <node concept="3clFbS" id="2J$v$$XF_Mj" role="2VODD2">
+          <node concept="Jncv_" id="2J$v$$XF_Mv" role="3cqZAp">
+            <ref role="JncvD" to="ljcb:5QUHtZfZ3cV" resolve="UseCaseRelation" />
+            <node concept="1r4Lsj" id="2J$v$$XF_MW" role="JncvB" />
+            <node concept="3clFbS" id="2J$v$$XF_Mx" role="Jncv$">
+              <node concept="Jncv_" id="2J$v$$XFAxD" role="3cqZAp">
+                <ref role="JncvD" to="ljcb:4higIaTkPHJ" resolve="UseCase" />
+                <node concept="1r4N1M" id="2J$v$$XFAyg" role="JncvB" />
+                <node concept="3clFbS" id="2J$v$$XFAxH" role="Jncv$">
+                  <node concept="3clFbF" id="2J$v$$XF_OI" role="3cqZAp">
+                    <node concept="37vLTI" id="2J$v$$XFAjC" role="3clFbG">
+                      <node concept="2OqwBi" id="2J$v$$XF_XJ" role="37vLTJ">
+                        <node concept="Jnkvi" id="2J$v$$XF_OH" role="2Oq$k0">
+                          <ref role="1M0zk5" node="2J$v$$XF_My" resolve="usecaCaseRelation" />
+                        </node>
+                        <node concept="3TrEf2" id="2J$v$$XFA5p" role="2OqNvi">
+                          <ref role="3Tt5mk" to="ljcb:4higIaTkPJg" resolve="from" />
+                        </node>
+                      </node>
+                      <node concept="Jnkvi" id="2J$v$$XFAP1" role="37vLTx">
+                        <ref role="1M0zk5" node="2J$v$$XFAxJ" resolve="useCase" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="JncvC" id="2J$v$$XFAxJ" role="JncvA">
+                  <property role="TrG5h" value="useCase" />
+                  <node concept="2jxLKc" id="2J$v$$XFAxK" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+            <node concept="JncvC" id="2J$v$$XF_My" role="JncvA">
+              <property role="TrG5h" value="usecaCaseRelation" />
+              <node concept="2jxLKc" id="2J$v$$XF_Mz" role="1tU5fm" />
             </node>
           </node>
         </node>

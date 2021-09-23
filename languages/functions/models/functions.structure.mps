@@ -48,6 +48,7 @@
     <property role="EcuMT" value="6272842267442053755" />
     <property role="TrG5h" value="Function" />
     <property role="34LRSv" value="Function" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5sdBcUEW89W" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -155,7 +156,7 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4higIaTkPJl" role="1TKVEi">
       <property role="IQ2ns" value="4923070884208663509" />
-      <property role="20kJfa" value="functrion" />
+      <property role="20kJfa" value="function" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="5sdBcUEW89V" resolve="Function" />
     </node>

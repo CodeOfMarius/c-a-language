@@ -13,7 +13,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">bdd2c112-05e2-4831-9683-a6b983a97fc2(core)</dependency>
-    <dependency reexport="true">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
+    <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
     <dependency reexport="false">50fd4dec-4494-4a71-a0ca-d35c48af6670(de.itemis.mps.editor.diagram.layout#4341402299005877448)</dependency>
     <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
@@ -21,9 +21,13 @@
     <dependency reexport="false">ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3(functions)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:bdd2c112-05e2-4831-9683-a6b983a97fc2:core" version="0" />
+    <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:85ae784e-e91f-4341-b347-054a25865cf6:entities" version="0" />
     <language slang="l:ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3:functions" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:5ff6a03f-752e-417c-b647-2bef260388ae:modules" version="0" />
+    <language slang="l:43bc6b96-a926-4684-8e52-995f0e8f8c34:usecase" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
