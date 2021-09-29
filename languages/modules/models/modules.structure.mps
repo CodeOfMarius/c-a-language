@@ -47,10 +47,45 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="modules" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="ljcb:2icQQxJDK6w" resolve="ModuleReference" />
+      <ref role="20lvS9" node="78sHg3raYU3" resolve="ProgramModuleReference" />
+    </node>
+    <node concept="1TJgyj" id="4mPs3OmQCXe" role="1TKVEi">
+      <property role="IQ2ns" value="5023044367080394574" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="dependencies" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="78sHg3rb90g" resolve="ProgramModuleRelation" />
     </node>
     <node concept="PrWs8" id="2icQQxJDPjC" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78sHg3raYU3">
+    <property role="EcuMT" value="8222646034953399939" />
+    <property role="TrG5h" value="ProgramModuleReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="78sHg3raYU4" role="1TKVEi">
+      <property role="IQ2ns" value="8222646034953399940" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="ljcb:4higIaTkPJw" resolve="Module" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="78sHg3rb90g">
+    <property role="EcuMT" value="8222646034953441296" />
+    <property role="TrG5h" value="ProgramModuleRelation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4mPs3OmRu1M" role="1TKVEi">
+      <property role="IQ2ns" value="5023044367080611954" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="78sHg3raYU3" resolve="ProgramModuleReference" />
+    </node>
+    <node concept="1TJgyj" id="78sHg3rb90h" role="1TKVEi">
+      <property role="IQ2ns" value="8222646034953441297" />
+      <property role="20kJfa" value="to" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="78sHg3raYU3" resolve="ProgramModuleReference" />
     </node>
   </node>
 </model>
