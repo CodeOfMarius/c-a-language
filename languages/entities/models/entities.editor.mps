@@ -113,9 +113,6 @@
         </node>
         <node concept="2iRkQZ" id="4higIaTkFMn" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="4higIaTknT2" role="3EZMnx">
-        <property role="3F0ifm" value="-----------------" />
-      </node>
       <node concept="2iRkQZ" id="5sdBcUEVDnW" role="2iSdaV" />
     </node>
   </node>

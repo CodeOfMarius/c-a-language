@@ -28,9 +28,19 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
@@ -40,6 +50,10 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -118,6 +132,23 @@
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="78sHg3raYU3" resolve="ProgramModuleReference" />
+    </node>
+    <node concept="1TJgyi" id="5IYm1YF0vhp" role="1TKVEl">
+      <property role="IQ2nx" value="6610818196062729305" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="5IYm1YF0vhr" resolve="ModuleRelationType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="5IYm1YF0vhr">
+    <property role="3F6X1D" value="6610818196062729307" />
+    <property role="TrG5h" value="ModuleRelationType" />
+    <node concept="25R33" id="5IYm1YF0vhs" role="25R1y">
+      <property role="3tVfz5" value="6610818196062729308" />
+      <property role="TrG5h" value="DEPENDENCY" />
+    </node>
+    <node concept="25R33" id="5IYm1YF0vht" role="25R1y">
+      <property role="3tVfz5" value="6610818196062729309" />
+      <property role="TrG5h" value="SUBMODULE" />
     </node>
   </node>
 </model>

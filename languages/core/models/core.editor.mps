@@ -87,6 +87,7 @@
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -377,9 +378,7 @@
       </node>
       <node concept="3EZMnI" id="1wOmRpURsVJ" role="3EZMnx">
         <node concept="VPM3Z" id="1wOmRpURsVL" role="3F10Kt" />
-        <node concept="3F0ifn" id="1wOmRpURsWa" role="3EZMnx">
-          <property role="3F0ifm" value="" />
-        </node>
+        <node concept="3XFhqQ" id="4V1HtaXpQvc" role="3EZMnx" />
         <node concept="3F2HdR" id="1wOmRpURsW1" role="3EZMnx">
           <ref role="1NtTu8" to="h1tq:1wOmRpURsS0" resolve="entities" />
           <node concept="2iRkQZ" id="1wOmRpURsW4" role="2czzBx" />
@@ -408,7 +407,7 @@
       <node concept="3EZMnI" id="1wOmRpURtfr" role="3EZMnx">
         <node concept="VPM3Z" id="1wOmRpURtft" role="3F10Kt" />
         <node concept="3F0ifn" id="1wOmRpURtfv" role="3EZMnx">
-          <property role="3F0ifm" value="-name:" />
+          <property role="3F0ifm" value="name:" />
         </node>
         <node concept="3F0A7n" id="1wOmRpURtfC" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />

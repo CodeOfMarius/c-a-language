@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="9j2s" ref="r:ce26b572-3ba3-42ed-b317-5b1c048b7057(functions.structure)" implicit="true" />
+    <import index="5huh" ref="r:9d2c0688-a8ae-47e9-8bd4-7359f96422a1(entities.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -105,6 +106,11 @@
       <property role="TrG5h" value="uuid" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="5rpu5Ggpp89" role="1TKVEl">
+      <property role="IQ2nx" value="6258165489720463881" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" node="5rpu5Ggpp84" resolve="UseCaseType" />
+    </node>
     <node concept="1irR5M" id="7QMfPogCjho" role="rwd14">
       <property role="2$rrk2" value="2" />
       <node concept="1irR9n" id="7QMfPogCjhs" role="1irR9h">
@@ -133,12 +139,6 @@
       <property role="20kJfa" value="calls" />
       <ref role="20lvS9" node="4higIaTkPJf" resolve="UseCaseReference" />
     </node>
-    <node concept="1TJgyj" id="1zT$DkoZIeV" role="1TKVEi">
-      <property role="IQ2ns" value="1799630695178363835" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="uses" />
-      <ref role="20lvS9" node="4higIaTkPJc" resolve="AdapterReference" />
-    </node>
     <node concept="1TJgyi" id="5QUHtZfXjro" role="1TKVEl">
       <property role="IQ2nx" value="6753910564066768600" />
       <property role="TrG5h" value="uuid" />
@@ -148,6 +148,16 @@
       <property role="IQ2nx" value="1799630695178346320" />
       <property role="TrG5h" value="type" />
       <ref role="AX2Wp" node="1zT$DkoZDX5" resolve="AdapterType" />
+    </node>
+    <node concept="1TJgyi" id="4V1HtaXjN$p" role="1TKVEl">
+      <property role="IQ2nx" value="5675016922187381017" />
+      <property role="TrG5h" value="url" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="4V1HtaXDrK_" role="1TKVEi">
+      <property role="IQ2ns" value="5675016922193050661" />
+      <property role="20kJfa" value="reference" />
+      <ref role="20lvS9" to="5huh:5sdBcUEVDnn" resolve="Entity" />
     </node>
   </node>
   <node concept="1TIwiD" id="4higIaTkPJc">
@@ -217,6 +227,11 @@
         </node>
       </node>
     </node>
+    <node concept="1TJgyj" id="4V1HtaXmc_Y" role="1TKVEi">
+      <property role="IQ2ns" value="5675016922188007806" />
+      <property role="20kJfa" value="entitySet" />
+      <ref role="20lvS9" to="5huh:5sdBcUEVDrQ" resolve="EntitySet" />
+    </node>
   </node>
   <node concept="25R3W" id="1zT$DkoZDX5">
     <property role="3F6X1D" value="1799630695178346309" />
@@ -228,6 +243,14 @@
     <node concept="25R33" id="1zT$DkoZDX7" role="25R1y">
       <property role="3tVfz5" value="1799630695178346311" />
       <property role="TrG5h" value="Secondary" />
+    </node>
+    <node concept="25R33" id="4V1HtaXjslp" role="25R1y">
+      <property role="3tVfz5" value="5675016922187285849" />
+      <property role="TrG5h" value="Web" />
+    </node>
+    <node concept="25R33" id="4V1HtaXjslt" role="25R1y">
+      <property role="3tVfz5" value="5675016922187285853" />
+      <property role="TrG5h" value="DB" />
     </node>
   </node>
   <node concept="1TIwiD" id="2icQQxJDK6w">
@@ -260,23 +283,41 @@
   <node concept="1TIwiD" id="5QUHtZfZ3cV">
     <property role="EcuMT" value="6753910564067226427" />
     <property role="TrG5h" value="UseCaseRelation" />
-    <ref role="1TJDcQ" node="4higIaTkPJf" resolve="UseCaseReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4V1HtaXGvq0" role="1TKVEi">
+      <property role="IQ2ns" value="5675016922193852032" />
+      <property role="20kJfa" value="from" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4higIaTkPJf" resolve="UseCaseReference" />
+    </node>
     <node concept="1TJgyj" id="5QUHtZfZ3xU" role="1TKVEi">
       <property role="IQ2ns" value="6753910564067227770" />
       <property role="20kJfa" value="to" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4higIaTkPHJ" resolve="UseCase" />
+      <ref role="20lvS9" node="4higIaTkPJf" resolve="UseCaseReference" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5TN_IXx4PjH">
-    <property role="EcuMT" value="6805949416756958445" />
-    <property role="TrG5h" value="AdapterRelation" />
-    <ref role="1TJDcQ" node="4higIaTkPJc" resolve="AdapterReference" />
-    <node concept="1TJgyj" id="5TN_IXx4PjI" role="1TKVEi">
-      <property role="IQ2ns" value="6805949416756958446" />
-      <property role="20kJfa" value="to" />
+  <node concept="25R3W" id="5rpu5Ggpp84">
+    <property role="3F6X1D" value="6258165489720463876" />
+    <property role="TrG5h" value="UseCaseType" />
+    <node concept="25R33" id="5rpu5Ggpp85" role="25R1y">
+      <property role="3tVfz5" value="6258165489720463877" />
+      <property role="TrG5h" value="Query" />
+    </node>
+    <node concept="25R33" id="5rpu5Ggpp86" role="25R1y">
+      <property role="3tVfz5" value="6258165489720463878" />
+      <property role="TrG5h" value="UseCase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4V1HtaXxyAh">
+    <property role="EcuMT" value="5675016922190981521" />
+    <property role="TrG5h" value="EntityReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4V1HtaXxyA$" role="1TKVEi">
+      <property role="IQ2ns" value="5675016922190981540" />
+      <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4higIaTkPHJ" resolve="UseCase" />
+      <ref role="20lvS9" to="5huh:5sdBcUEVDnn" resolve="Entity" />
     </node>
   </node>
 </model>
