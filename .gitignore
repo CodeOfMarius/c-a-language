@@ -7,3 +7,5 @@
 \.gitattributes
 
 \.mps/vcs\.xml
+
+/build

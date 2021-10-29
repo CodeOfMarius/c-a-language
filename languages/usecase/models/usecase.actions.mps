@@ -142,48 +142,6 @@
         </node>
       </node>
     </node>
-    <node concept="37WvkG" id="5TN_IXx4Po9" role="37WGs$">
-      <ref role="37XkoT" to="ljcb:5TN_IXx4PjH" resolve="AdapterRelation" />
-      <node concept="37Y9Zx" id="5TN_IXx4Poa" role="37ZfLb">
-        <node concept="3clFbS" id="5TN_IXx4Pob" role="2VODD2">
-          <node concept="Jncv_" id="5TN_IXx4Ppg" role="3cqZAp">
-            <ref role="JncvD" to="ljcb:5TN_IXx4PjH" resolve="AdapterRelation" />
-            <node concept="1r4Lsj" id="5TN_IXx4WF5" role="JncvB" />
-            <node concept="3clFbS" id="5TN_IXx4Ppi" role="Jncv$">
-              <node concept="Jncv_" id="5TN_IXx4WHE" role="3cqZAp">
-                <ref role="JncvD" to="ljcb:4higIaTkPHM" resolve="Adapter" />
-                <node concept="1r4N1M" id="5TN_IXx4WI7" role="JncvB" />
-                <node concept="3clFbS" id="5TN_IXx4WHG" role="Jncv$">
-                  <node concept="3clFbF" id="5TN_IXx4WJ3" role="3cqZAp">
-                    <node concept="37vLTI" id="5TN_IXx4XhD" role="3clFbG">
-                      <node concept="Jnkvi" id="5TN_IXx4Xqo" role="37vLTx">
-                        <ref role="1M0zk5" node="5TN_IXx4WHH" resolve="adapter" />
-                      </node>
-                      <node concept="2OqwBi" id="5TN_IXx4WTI" role="37vLTJ">
-                        <node concept="Jnkvi" id="5TN_IXx4WJ2" role="2Oq$k0">
-                          <ref role="1M0zk5" node="5TN_IXx4Ppj" resolve="adapterRelation" />
-                        </node>
-                        <node concept="3TrEf2" id="5TN_IXx4X5C" role="2OqNvi">
-                          <ref role="3Tt5mk" to="ljcb:4higIaTkPJd" resolve="adapter" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="JncvC" id="5TN_IXx4WHH" role="JncvA">
-                  <property role="TrG5h" value="adapter" />
-                  <node concept="2jxLKc" id="5TN_IXx4WHI" role="1tU5fm" />
-                </node>
-              </node>
-            </node>
-            <node concept="JncvC" id="5TN_IXx4Ppj" role="JncvA">
-              <property role="TrG5h" value="adapterRelation" />
-              <node concept="2jxLKc" id="5TN_IXx4Ppk" role="1tU5fm" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="37WguZ" id="2J$v$$XF_Mg">
     <property role="TrG5h" value="RelationFactory" />

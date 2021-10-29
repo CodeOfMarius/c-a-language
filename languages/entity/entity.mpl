@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="entities" uuid="85ae784e-e91f-4341-b347-054a25865cf6" languageVersion="0" moduleVersion="0">
+<language namespace="entity" uuid="f95d8095-3fe6-49dd-95c7-a45487b8d80a" languageVersion="0" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/ressources/lombok.jar!/" type="java_classes">
-      <sourceRoot location="." />
     </modelRoot>
   </models>
   <facets>
@@ -13,11 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels>
-    <model modelUID="85ae784e-e91f-4341-b347-054a25865cf6/java:lombok(entities/)" />
-  </accessoryModels>
+  <accessoryModels />
   <generators>
-    <generator alias="main" namespace="entities.generator" uuid="5e1bf22b-070a-4a48-a53a-1f2e641ae5d2">
+    <generator alias="main" namespace="entity.generator" uuid="ec1ab516-e065-4df7-b87a-a6561f2294ad">
       <models>
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
@@ -52,24 +47,19 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-        <module reference="85ae784e-e91f-4341-b347-054a25865cf6(entities)" version="0" />
-        <module reference="5e1bf22b-070a-4a48-a53a-1f2e641ae5d2(entities.generator)" version="0" />
+        <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
+        <module reference="ec1ab516-e065-4df7-b87a-a6561f2294ad(entity.generator)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
   </generators>
-  <stubModelEntries>
-    <stubModelEntry path="${module}/ressources/lombok.jar" />
-  </stubModelEntries>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
-    <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
+    <dependency reexport="false">90966cb5-4f67-429a-b7ba-d0fded4ede71(jetbrains.mps.lang.editor.forms.runtime)</dependency>
+    <dependency reexport="false">cd17a113-ca4e-472f-a8de-c49008f9eea8(jetbrains.mps.lang.feedback)</dependency>
     <dependency reexport="false">cddf55b3-117e-46ec-837c-ff50eb7b89b0(jetbrains.mps.lang.feedback.problem.childAndProp)</dependency>
-    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -117,17 +107,18 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
-    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="85ae784e-e91f-4341-b347-054a25865cf6(entities)" version="0" />
-    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
+    <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
+    <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
+    <module reference="90966cb5-4f67-429a-b7ba-d0fded4ede71(jetbrains.mps.lang.editor.forms.runtime)" version="0" />
+    <module reference="cd17a113-ca4e-472f-a8de-c49008f9eea8(jetbrains.mps.lang.feedback)" version="0" />
     <module reference="033598a4-76a9-47e1-ac89-a300c0fceab8(jetbrains.mps.lang.feedback.problem)" version="0" />
     <module reference="cddf55b3-117e-46ec-837c-ff50eb7b89b0(jetbrains.mps.lang.feedback.problem.childAndProp)" version="1" />
-    <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
+    <module reference="517077fd-e44f-4338-a475-1d29781dfdb8(jetbrains.mps.lang.feedback.skeleton)" version="0" />
+    <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
+    <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
   </dependencyVersions>
   <extendedLanguages />
 </language>

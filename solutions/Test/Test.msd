@@ -12,18 +12,19 @@
   </facets>
   <sourcePath />
   <dependencies>
-    <dependency reexport="false">bdd2c112-05e2-4831-9683-a6b983a97fc2(core)</dependency>
     <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
     <dependency reexport="false">50fd4dec-4494-4a71-a0ca-d35c48af6670(de.itemis.mps.editor.diagram.layout#4341402299005877448)</dependency>
     <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
     <dependency reexport="false">85ae784e-e91f-4341-b347-054a25865cf6(entities)</dependency>
     <dependency reexport="false">ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3(functions)</dependency>
+    <dependency reexport="false">f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:bdd2c112-05e2-4831-9683-a6b983a97fc2:core" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:85ae784e-e91f-4341-b347-054a25865cf6:entities" version="0" />
+    <language slang="l:f95d8095-3fe6-49dd-95c7-a45487b8d80a:entity" version="0" />
     <language slang="l:ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3:functions" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:5ff6a03f-752e-417c-b647-2bef260388ae:modules" version="0" />
@@ -50,6 +51,7 @@
     <module reference="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="85ae784e-e91f-4341-b347-054a25865cf6(entities)" version="0" />
+    <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
     <module reference="ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3(functions)" version="0" />
     <module reference="67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
