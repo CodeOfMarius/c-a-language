@@ -55,6 +55,10 @@
       </concept>
     </language>
     <language id="43bc6b96-a926-4684-8e52-995f0e8f8c34" name="usecase">
+      <concept id="6753910564067226427" name="usecase.structure.UseCaseRelation" flags="ng" index="2ihCr$">
+        <reference id="6753910564067227770" name="to" index="2ihCQ_" />
+        <reference id="5675016922193852032" name="from" index="3Ns4di" />
+      </concept>
       <concept id="4923070884208663520" name="usecase.structure.Module" flags="ng" index="3X0h$2">
         <property id="7430555928485960297" name="uuid" index="3I2F_m" />
         <reference id="5675016922188007806" name="entitySet" index="3NAnMG" />
@@ -69,6 +73,7 @@
       </concept>
       <concept id="4923070884208663407" name="usecase.structure.UseCase" flags="ng" index="3X0hAd">
         <property id="6753910564066513226" name="uuid" index="2iiYil" />
+        <child id="4923070884208663506" name="uses" index="3X0h$K" />
         <child id="4923070884208663511" name="outgoing" index="3X0h$P" />
         <child id="4923070884208663953" name="functions" index="3X0hXN" />
       </concept>
@@ -429,7 +434,7 @@
   <node concept="3X0h$2" id="7QMfPogDbN0">
     <property role="3I2F_m" value="7cef1631-c590-4684-95d4-160fd3763f10" />
     <property role="TrG5h" value="StudentModule" />
-    <ref role="3NAnMG" node="4V1HtaXrjGr" resolve="StudentModuleSet" />
+    <ref role="3NAnMG" node="7ZnwEiPMuwL" resolve="StudentModuleEntitiySet" />
     <node concept="3X0h$H" id="4V1HtaXM4Vw" role="3X0h$3">
       <ref role="3X0h$M" node="4V1HtaXM4Vv" resolve="ReadStudentsQuery" />
     </node>
@@ -463,7 +468,82 @@
       <property role="TrG5h" value="StudentRepositoryAdapter" />
       <property role="01KR5" value="4V1HtaXjslt/DB" />
       <property role="3NzCNb" value="T" />
-      <ref role="3Np0BR" node="4V1HtaXvEPq" resolve="Student" />
+      <ref role="3Np0BR" node="7ZnwEiPMux4" resolve="Student" />
+    </node>
+    <node concept="37mRI7" id="7ZnwEiPMuxa" role="lGtFl">
+      <node concept="37mRIm" id="7ZnwEiPMuxb" role="37mRID">
+        <property role="37mO49" value="5675016922195316447" />
+        <node concept="gqqVs" id="7ZnwEiPMux9" role="37mO4d">
+          <property role="gqqTZ" value="278.0002831054687" />
+          <property role="gqqTW" value="86.0" />
+          <property role="gqqTX" value="148.0" />
+          <property role="gqqTy" value="56.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxd" role="37mRID">
+        <property role="37mO49" value="6490192743268678334" />
+        <node concept="gqqVs" id="7ZnwEiPMuxc" role="37mO4d">
+          <property role="gqqTZ" value="12.000100000000003" />
+          <property role="gqqTW" value="12.0" />
+          <property role="gqqTX" value="172.0" />
+          <property role="gqqTy" value="56.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxf" role="37mRID">
+        <property role="37mO49" value="5675016922195688622" />
+        <node concept="gqqVs" id="7ZnwEiPMuxe" role="37mO4d">
+          <property role="gqqTZ" value="12.000100000000003" />
+          <property role="gqqTW" value="159.0" />
+          <property role="gqqTX" value="228.0" />
+          <property role="gqqTy" value="54.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxh" role="37mRID">
+        <property role="37mO49" value="6490192743268678366" />
+        <node concept="gqqVs" id="7ZnwEiPMuxg" role="37mO4d">
+          <property role="gqqTZ" value="331.0002983642578" />
+          <property role="gqqTW" value="12.0" />
+          <property role="gqqTX" value="284.0" />
+          <property role="gqqTy" value="54.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxj" role="37mRID">
+        <property role="37mO49" value="6490192743268678359" />
+        <node concept="gqqVs" id="7ZnwEiPMuxi" role="37mO4d">
+          <property role="gqqTZ" value="148.0001" />
+          <property role="gqqTW" value="87.0" />
+          <property role="gqqTX" value="92.0" />
+          <property role="gqqTy" value="54.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxl" role="37mRID">
+        <property role="37mO49" value="5675016922189745531" />
+        <node concept="gqqVs" id="7ZnwEiPMuxk" role="37mO4d">
+          <property role="gqqTZ" value="444.0004967285156" />
+          <property role="gqqTW" value="87.0" />
+          <property role="gqqTX" value="204.0" />
+          <property role="gqqTy" value="54.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7ZnwEiPMuxT" role="37mRID">
+        <property role="37mO49" value="5675016922195688626" />
+        <node concept="2VclpC" id="7ZnwEiPMuxS" role="37mO4d">
+          <node concept="2VclrF" id="7ZnwEiPMuxU" role="2Vcluh">
+            <property role="2Vclpx" value="258.0001983642578" />
+            <property role="2Vclpz" value="185.00005" />
+          </node>
+          <node concept="2VclrF" id="7ZnwEiPMuxV" role="2Vcluh">
+            <property role="2Vclpx" value="258.0001983642578" />
+            <property role="2Vclpz" value="113.00005" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3X0h$2" id="5IYm1YF1ZkH">
@@ -519,6 +599,13 @@
   <node concept="3X0hAd" id="5ChMYBqmfEY">
     <property role="2iiYil" value="4a98b8cf-fbd4-426e-aaef-ce63928ec964" />
     <property role="TrG5h" value="CreateStudentUseCase" />
+    <node concept="3X0h$I" id="7ZnwEiPPAVp" role="3X0h$P">
+      <ref role="3X0h$J" node="5ChMYBqmfFu" resolve="InternalReadUserInformationAdapter" />
+    </node>
+    <node concept="2ihCr$" id="7ZnwEiPYjQH" role="3X0h$K">
+      <ref role="3Ns4di" node="5ChMYBqmfEZ" />
+      <ref role="2ihCQ_" node="4V1HtaXM4Vw" />
+    </node>
   </node>
   <node concept="3XSKCS" id="2zdaQ9ktEXr">
     <property role="TrG5h" value="TestEntitySet" />
@@ -533,6 +620,12 @@
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
         <property role="TrG5h" value="tes" />
       </node>
+    </node>
+  </node>
+  <node concept="3XSKCS" id="7ZnwEiPMuwL">
+    <property role="TrG5h" value="StudentModuleEntitiySet" />
+    <node concept="3cFfE$" id="7ZnwEiPMux4" role="3XSKCR">
+      <property role="TrG5h" value="Student" />
     </node>
   </node>
 </model>

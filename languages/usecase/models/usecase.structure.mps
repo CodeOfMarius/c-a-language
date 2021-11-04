@@ -8,7 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="9j2s" ref="r:ce26b572-3ba3-42ed-b317-5b1c048b7057(functions.structure)" implicit="true" />
-    <import index="5huh" ref="r:9d2c0688-a8ae-47e9-8bd4-7359f96422a1(entities.structure)" implicit="true" />
+    <import index="68d1" ref="r:dcffbee8-6938-4294-8c03-2ee3e0bd9c4a(entity.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -157,7 +157,7 @@
     <node concept="1TJgyj" id="4V1HtaXDrK_" role="1TKVEi">
       <property role="IQ2ns" value="5675016922193050661" />
       <property role="20kJfa" value="reference" />
-      <ref role="20lvS9" to="5huh:5sdBcUEVDnn" resolve="Entity" />
+      <ref role="20lvS9" to="68d1:DKMej6R390" resolve="Entity" />
     </node>
   </node>
   <node concept="1TIwiD" id="4higIaTkPJc">
@@ -180,9 +180,6 @@
       <property role="20kJfa" value="from" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="4higIaTkPHJ" resolve="UseCase" />
-    </node>
-    <node concept="PrWs8" id="5QUHtZg5m7D" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="1TIwiD" id="4higIaTkPJw">
@@ -230,7 +227,7 @@
     <node concept="1TJgyj" id="4V1HtaXmc_Y" role="1TKVEi">
       <property role="IQ2ns" value="5675016922188007806" />
       <property role="20kJfa" value="entitySet" />
-      <ref role="20lvS9" to="5huh:5sdBcUEVDrQ" resolve="EntitySet" />
+      <ref role="20lvS9" to="68d1:5sdBcUEVDrQ" resolve="EntitySet" />
     </node>
   </node>
   <node concept="25R3W" id="1zT$DkoZDX5">
@@ -317,7 +314,7 @@
       <property role="IQ2ns" value="5675016922190981540" />
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="5huh:5sdBcUEVDnn" resolve="Entity" />
+      <ref role="20lvS9" to="68d1:DKMej6R390" resolve="Entity" />
     </node>
   </node>
 </model>
