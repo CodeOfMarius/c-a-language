@@ -70,7 +70,7 @@
     <node concept="3QByp$" id="2zdaQ9ktrDN" role="3QBEN7">
       <node concept="16I2mz" id="2zdaQ9ktrDO" role="16N$OO">
         <node concept="16N$OT" id="2zdaQ9ktrDP" role="16I2mt">
-          <property role="16N$OU" value="Only one Attribute may be primary" />
+          <property role="16N$OU" value="Only one Attribute may be primary and must be of cardinality one" />
         </node>
       </node>
       <node concept="1GjwBS" id="2zdaQ9ktrDQ" role="3JXyrO">

@@ -7,8 +7,8 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="9j2s" ref="r:ce26b572-3ba3-42ed-b317-5b1c048b7057(functions.structure)" implicit="true" />
     <import index="68d1" ref="r:dcffbee8-6938-4294-8c03-2ee3e0bd9c4a(entity.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -40,6 +40,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -85,7 +86,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="functions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="9j2s:4higIaTkPJk" resolve="FunctionReference" />
+      <ref role="20lvS9" node="2pRz8skmvgV" resolve="Function" />
     </node>
     <node concept="1TJgyj" id="4higIaTkPJi" role="1TKVEi">
       <property role="IQ2ns" value="4923070884208663506" />
@@ -315,6 +316,94 @@
       <property role="20kJfa" value="entity" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="68d1:DKMej6R390" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvgV">
+    <property role="EcuMT" value="2771838607459742779" />
+    <property role="TrG5h" value="Function" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2pRz8skmvgW" role="PzmwI">
+      <ref role="PrY4T" to="tpce:6TyNL3imAnw" resolve="INamedAspect" />
+    </node>
+    <node concept="1TJgyj" id="2pRz8skmvkY" role="1TKVEi">
+      <property role="IQ2ns" value="2771838607459743038" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2pRz8skmvhk" resolve="Parameter" />
+    </node>
+    <node concept="1TJgyj" id="2pRz8skmvl0" role="1TKVEi">
+      <property role="IQ2ns" value="2771838607459743040" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="returns" />
+      <ref role="20lvS9" node="2pRz8skmvjB" resolve="ReturnValue" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvhk">
+    <property role="EcuMT" value="2771838607459742804" />
+    <property role="TrG5h" value="Parameter" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2pRz8skmvhl" role="PzmwI">
+      <ref role="PrY4T" to="tpce:6TyNL3imAnw" resolve="INamedAspect" />
+    </node>
+    <node concept="1TJgyi" id="2pRz8skmvht" role="1TKVEl">
+      <property role="IQ2nx" value="2771838607459742813" />
+      <property role="TrG5h" value="cardinality" />
+      <ref role="AX2Wp" to="68d1:5sdBcUEW8a5" resolve="Cardinality" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvhn">
+    <property role="EcuMT" value="2771838607459742807" />
+    <property role="TrG5h" value="EntityParameter" />
+    <ref role="1TJDcQ" node="2pRz8skmvhk" resolve="Parameter" />
+    <node concept="1TJgyj" id="2pRz8skmvho" role="1TKVEi">
+      <property role="IQ2ns" value="2771838607459742808" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="68d1:DKMej6R390" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvhq">
+    <property role="EcuMT" value="2771838607459742810" />
+    <property role="TrG5h" value="BaseParameter" />
+    <ref role="1TJDcQ" node="2pRz8skmvhk" resolve="Parameter" />
+    <node concept="1TJgyi" id="2pRz8skmvi8" role="1TKVEl">
+      <property role="IQ2nx" value="2771838607459742856" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="68d1:5sdBcUEVDn1" resolve="AttributeType" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvjB">
+    <property role="EcuMT" value="2771838607459742951" />
+    <property role="TrG5h" value="ReturnValue" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2pRz8skmvjF" role="1TKVEl">
+      <property role="IQ2nx" value="2771838607459742955" />
+      <property role="TrG5h" value="cardinality" />
+      <ref role="AX2Wp" to="68d1:5sdBcUEW8a5" resolve="Cardinality" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvjC">
+    <property role="EcuMT" value="2771838607459742952" />
+    <property role="TrG5h" value="EntityReturnValue" />
+    <ref role="1TJDcQ" node="2pRz8skmvjB" resolve="ReturnValue" />
+    <node concept="1TJgyj" id="2pRz8skmvjD" role="1TKVEi">
+      <property role="IQ2ns" value="2771838607459742953" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="68d1:DKMej6R390" resolve="Entity" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2pRz8skmvjH">
+    <property role="EcuMT" value="2771838607459742957" />
+    <property role="TrG5h" value="BaseReturnValue" />
+    <ref role="1TJDcQ" node="2pRz8skmvjB" resolve="ReturnValue" />
+    <node concept="1TJgyi" id="2pRz8skmvjI" role="1TKVEl">
+      <property role="IQ2nx" value="2771838607459742958" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="68d1:5sdBcUEVDn1" resolve="AttributeType" />
     </node>
   </node>
 </model>

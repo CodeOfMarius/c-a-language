@@ -26,9 +26,6 @@
       </concept>
     </language>
     <language id="ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3" name="functions">
-      <concept id="4923070884208663508" name="functions.structure.FunctionReference" flags="ng" index="3X0h$Q">
-        <reference id="4923070884208663509" name="function" index="3X0h$R" />
-      </concept>
       <concept id="4923070884208026241" name="functions.structure.FunctionSet" flags="ng" index="3X6Y1z">
         <child id="4923070884208026533" name="functions" index="3X6Y57" />
       </concept>
@@ -36,14 +33,21 @@
     </language>
     <language id="f95d8095-3fe6-49dd-95c7-a45487b8d80a" name="entity">
       <concept id="752322022685291072" name="entity.structure.Entity" flags="ng" index="3cFfE$">
+        <property id="2771838607457474505" name="persistable" index="MgdHe" />
+        <child id="2940053833066453978" name="associates" index="1WJF2S" />
         <child id="2940053833066453976" name="attributes" index="1WJF2U" />
       </concept>
       <concept id="6272842267441927614" name="entity.structure.Attribute" flags="ng" index="3XSK_K">
+        <property id="2771838607458907687" name="cardinality" index="MeFEw" />
         <property id="6272842267441927642" name="primary" index="3XSK$k" />
         <property id="6272842267441927637" name="type" index="3XSK$r" />
       </concept>
       <concept id="6272842267441927926" name="entity.structure.EntitySet" flags="ng" index="3XSKCS">
         <child id="6272842267441927929" name="entities" index="3XSKCR" />
+      </concept>
+      <concept id="6272842267441937044" name="entity.structure.EntityReference" flags="ng" index="3XSMpq">
+        <property id="4923070884208649306" name="cardinality" index="3X0mqS" />
+        <reference id="6272842267441937045" name="entity" index="3XSMpr" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -58,6 +62,22 @@
       <concept id="6753910564067226427" name="usecase.structure.UseCaseRelation" flags="ng" index="2ihCr$">
         <reference id="6753910564067227770" name="to" index="2ihCQ_" />
         <reference id="5675016922193852032" name="from" index="3Ns4di" />
+      </concept>
+      <concept id="2771838607459742951" name="usecase.structure.ReturnValue" flags="ng" index="MbBxw">
+        <property id="2771838607459742955" name="cardinality" index="MbBxG" />
+      </concept>
+      <concept id="2771838607459742952" name="usecase.structure.EntityReturnValue" flags="ng" index="MbBxJ">
+        <reference id="2771838607459742953" name="entity" index="MbBxI" />
+      </concept>
+      <concept id="2771838607459742779" name="usecase.structure.Function" flags="ng" index="MbByW">
+        <child id="2771838607459743038" name="parameters" index="MbBAT" />
+        <child id="2771838607459743040" name="returns" index="MbBB7" />
+      </concept>
+      <concept id="2771838607459742804" name="usecase.structure.Parameter" flags="ng" index="MbBzj">
+        <property id="2771838607459742813" name="cardinality" index="MbBzq" />
+      </concept>
+      <concept id="2771838607459742810" name="usecase.structure.BaseParameter" flags="ng" index="MbBzt">
+        <property id="2771838607459742856" name="type" index="MbBwf" />
       </concept>
       <concept id="4923070884208663520" name="usecase.structure.Module" flags="ng" index="3X0h$2">
         <property id="7430555928485960297" name="uuid" index="3I2F_m" />
@@ -106,23 +126,6 @@
       <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
         <property id="8963411245960998400" name="key" index="37mO49" />
         <child id="8963411245960998404" name="value" index="37mO4d" />
-      </concept>
-    </language>
-    <language id="85ae784e-e91f-4341-b347-054a25865cf6" name="entities">
-      <concept id="6272842267441927639" name="entities.structure.Entity" flags="ng" index="3XSK$p">
-        <child id="4923070884208622645" name="associates" index="3X0fVn" />
-        <child id="6272842267441927640" name="attributes" index="3XSK$m" />
-      </concept>
-      <concept id="6272842267441927614" name="entities.structure.Attribute" flags="ng" index="3XSK_L">
-        <property id="6272842267441927642" name="primary" index="3XSK$l" />
-        <property id="6272842267441927637" name="type" index="3XSK$s" />
-      </concept>
-      <concept id="6272842267441927926" name="entities.structure.EntitySet" flags="ng" index="3XSKCT">
-        <child id="6272842267441927929" name="entities" index="3XSKCS" />
-      </concept>
-      <concept id="6272842267441937044" name="entities.structure.EntityReference" flags="ng" index="3XSMpq">
-        <property id="4923070884208649306" name="cardinality" index="3X0mqS" />
-        <reference id="6272842267441937045" name="entity" index="3XSMpr" />
       </concept>
     </language>
   </registry>
@@ -554,37 +557,18 @@
     <property role="3I2F_m" value="87887bbf-669f-46e7-bdf0-8d510c2a7cc7" />
     <property role="TrG5h" value="HR" />
   </node>
-  <node concept="3XSKCT" id="4V1HtaXrjGr">
-    <property role="TrG5h" value="StudentModuleSet" />
-    <node concept="3XSK$p" id="4V1HtaXrjH0" role="3XSKCS">
-      <property role="TrG5h" value="TestEntity" />
-      <node concept="3XSK_L" id="4V1HtaXrjH4" role="3XSK$m">
-        <property role="TrG5h" value="id" />
-        <property role="3XSK$s" value="5sdBcUEVDnf/Double" />
-        <property role="3XSK$l" value="true" />
-      </node>
-      <node concept="3XSMpq" id="4V1HtaXvEPw" role="3X0fVn">
-        <property role="3X0mqS" value="5sdBcUEW8a6/ONE" />
-        <ref role="3XSMpr" node="4V1HtaXrjH0" resolve="TestEntity" />
-      </node>
-    </node>
-    <node concept="3XSK$p" id="4V1HtaXvEPq" role="3XSKCS">
-      <property role="TrG5h" value="Student" />
-      <node concept="3XSK_L" id="4V1HtaXvEPu" role="3XSK$m">
-        <property role="TrG5h" value="id" />
-        <property role="3XSK$s" value="5sdBcUEVDnf/Double" />
-        <property role="3XSK$l" value="true" />
-      </node>
-    </node>
-  </node>
   <node concept="3X0hAd" id="4V1HtaXM4Vv">
     <property role="2iiYil" value="9b750f80-95e0-4d4e-91ce-c364dedc87f3" />
     <property role="TrG5h" value="ReadStudentsQuery" />
     <node concept="3X0h$I" id="5Ew95bTpueJ" role="3X0h$P">
       <ref role="3X0h$J" node="4V1HtaXsOPV" resolve="StudentRepositoryAdapter" />
     </node>
-    <node concept="3X0h$Q" id="5ChMYBqnT2X" role="3X0hXN">
-      <ref role="3X0h$R" node="7LMnIKTEf8x" resolve="testFunction" />
+    <node concept="MbByW" id="2pRz8sknUpR" role="3X0hXN">
+      <property role="TrG5h" value="test" />
+      <node concept="MbBxJ" id="2pRz8skqvJI" role="MbBB7">
+        <property role="MbBxG" value="5sdBcUEW8a7/MANY" />
+        <ref role="MbBxI" node="7ZnwEiPMux4" resolve="Student" />
+      </node>
     </node>
   </node>
   <node concept="3X0h$2" id="4V1HtaXXKaX">
@@ -606,6 +590,17 @@
       <ref role="3Ns4di" node="5ChMYBqmfEZ" />
       <ref role="2ihCQ_" node="4V1HtaXM4Vw" />
     </node>
+    <node concept="MbByW" id="2pRz8sknH9d" role="3X0hXN">
+      <property role="TrG5h" value="createStudents" />
+      <node concept="MbBzt" id="2pRz8sknHmM" role="MbBAT">
+        <property role="TrG5h" value="test" />
+        <property role="MbBwf" value="5sdBcUEVDnf/Double" />
+        <property role="MbBzq" value="5sdBcUEW8a7/MANY" />
+      </node>
+      <node concept="MbBxJ" id="2pRz8skqQ7Q" role="MbBB7">
+        <ref role="MbBxI" node="7ZnwEiPMux4" resolve="Student" />
+      </node>
+    </node>
   </node>
   <node concept="3XSKCS" id="2zdaQ9ktEXr">
     <property role="TrG5h" value="TestEntitySet" />
@@ -613,8 +608,8 @@
       <property role="TrG5h" value="Test" />
       <node concept="3XSK_K" id="2zdaQ9ktEXu" role="1WJF2U">
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
-        <property role="3XSK$k" value="true" />
         <property role="TrG5h" value="test" />
+        <property role="MeFEw" value="5sdBcUEW8a7/MANY" />
       </node>
       <node concept="3XSK_K" id="2zdaQ9kufmC" role="1WJF2U">
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
@@ -626,6 +621,34 @@
     <property role="TrG5h" value="StudentModuleEntitiySet" />
     <node concept="3cFfE$" id="7ZnwEiPMux4" role="3XSKCR">
       <property role="TrG5h" value="Student" />
+      <property role="MgdHe" value="true" />
+      <node concept="3XSK_K" id="2pRz8skjpCC" role="1WJF2U">
+        <property role="TrG5h" value="id" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+        <property role="3XSK$k" value="true" />
+      </node>
+      <node concept="3XSK_K" id="2pRz8skjpCE" role="1WJF2U">
+        <property role="TrG5h" value="name" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+      </node>
+      <node concept="3XSMpq" id="2pRz8sklH84" role="1WJF2S">
+        <property role="TrG5h" value="superior" />
+        <ref role="3XSMpr" node="2pRz8skf$7c" resolve="Superior" />
+      </node>
+    </node>
+    <node concept="3cFfE$" id="2pRz8skf$7c" role="3XSKCR">
+      <property role="TrG5h" value="Superior" />
+      <property role="MgdHe" value="true" />
+      <node concept="3XSK_K" id="2pRz8sklWFn" role="1WJF2U">
+        <property role="TrG5h" value="id" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+        <property role="3XSK$k" value="true" />
+      </node>
+      <node concept="3XSMpq" id="2pRz8sklZHw" role="1WJF2S">
+        <property role="TrG5h" value="students" />
+        <property role="3X0mqS" value="5sdBcUEW8a7/MANY" />
+        <ref role="3XSMpr" node="7ZnwEiPMux4" resolve="Student" />
+      </node>
     </node>
   </node>
 </model>
