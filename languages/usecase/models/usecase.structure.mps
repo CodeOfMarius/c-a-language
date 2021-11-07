@@ -140,6 +140,13 @@
       <property role="20kJfa" value="calls" />
       <ref role="20lvS9" node="4higIaTkPJf" resolve="UseCaseReference" />
     </node>
+    <node concept="1TJgyj" id="2PYPEzANzAI" role="1TKVEi">
+      <property role="IQ2ns" value="3278293599687424430" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="functions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2pRz8skmvgV" resolve="Function" />
+    </node>
     <node concept="1TJgyi" id="5QUHtZfXjro" role="1TKVEl">
       <property role="IQ2nx" value="6753910564066768600" />
       <property role="TrG5h" value="uuid" />
@@ -263,19 +270,6 @@
     </node>
     <node concept="PrWs8" id="5QUHtZg5mOR" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="2icQQxJDLPo">
-    <property role="EcuMT" value="2633721123701202264" />
-    <property role="TrG5h" value="ModuleSet" />
-    <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2icQQxJDLPp" role="1TKVEi">
-      <property role="IQ2ns" value="2633721123701202265" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="module" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="4higIaTkPJw" resolve="Module" />
     </node>
   </node>
   <node concept="1TIwiD" id="5QUHtZfZ3cV">
