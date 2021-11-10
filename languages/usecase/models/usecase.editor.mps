@@ -6,7 +6,6 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
-    <use id="ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3" name="functions" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -380,6 +379,16 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="2iRfu4" id="4higIaTkPKA" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7O0tj5Mbg5$" role="3EZMnx">
+        <node concept="VPM3Z" id="7O0tj5Mbg5_" role="3F10Kt" />
+        <node concept="3F0ifn" id="7O0tj5Mbg5A" role="3EZMnx">
+          <property role="3F0ifm" value="base package:" />
+        </node>
+        <node concept="3F0A7n" id="7O0tj5Mbg5B" role="3EZMnx">
+          <ref role="1NtTu8" to="ljcb:7O0tj5MaPsj" resolve="basePackage" />
+        </node>
+        <node concept="2iRfu4" id="7O0tj5Mbg5C" role="2iSdaV" />
       </node>
       <node concept="3EZMnI" id="4V1HtaXjs7e" role="3EZMnx">
         <node concept="VPM3Z" id="4V1HtaXjs7g" role="3F10Kt" />
@@ -2354,6 +2363,29 @@
     </node>
     <node concept="2aJ2om" id="5QUHtZfWbII" role="CpUAK">
       <ref role="2$4xQ3" node="2icQQxJEi7j" resolve="Graphical_UseCase" />
+    </node>
+    <node concept="3EZMnI" id="7O0tj5Mb09b" role="6VMZX">
+      <node concept="2iRkQZ" id="7O0tj5MbjhI" role="2iSdaV" />
+      <node concept="3EZMnI" id="7O0tj5MbjhL" role="3EZMnx">
+        <node concept="VPM3Z" id="7O0tj5MbjhN" role="3F10Kt" />
+        <node concept="3F0ifn" id="7O0tj5MbjhP" role="3EZMnx">
+          <property role="3F0ifm" value="name:" />
+        </node>
+        <node concept="3F0A7n" id="7O0tj5Mbji3" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="7O0tj5MbjhQ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7O0tj5Mbjif" role="3EZMnx">
+        <node concept="VPM3Z" id="7O0tj5Mbjih" role="3F10Kt" />
+        <node concept="3F0ifn" id="7O0tj5Mbjij" role="3EZMnx">
+          <property role="3F0ifm" value="base package:" />
+        </node>
+        <node concept="3F0A7n" id="7O0tj5Mbjiy" role="3EZMnx">
+          <ref role="1NtTu8" to="ljcb:7O0tj5MaPsj" resolve="basePackage" />
+        </node>
+        <node concept="2iRfu4" id="7O0tj5Mbjik" role="2iSdaV" />
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="5QUHtZfYQux">

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -75,7 +76,6 @@
   <node concept="1TIwiD" id="DKMej6R390">
     <property role="EcuMT" value="752322022685291072" />
     <property role="TrG5h" value="Entity" />
-    <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Entity" />
     <property role="R4oN_" value="Entity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -122,8 +122,8 @@
       <property role="3tVfz5" value="6272842267441927631" />
       <property role="TrG5h" value="Double" />
     </node>
-    <node concept="25R33" id="5sdBcUEVDn6" role="25R1y">
-      <property role="3tVfz5" value="6272842267441927622" />
+    <node concept="25R33" id="7O0tj5MfXm7" role="25R1y">
+      <property role="3tVfz5" value="9007328109971625351" />
       <property role="TrG5h" value="Boolean" />
     </node>
     <node concept="25R33" id="5sdBcUEVDna" role="25R1y">
@@ -135,9 +135,6 @@
     <property role="EcuMT" value="6272842267441927614" />
     <property role="TrG5h" value="Attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="5sdBcUEVDmZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
     <node concept="1TJgyi" id="5sdBcUEVDnl" role="1TKVEl">
       <property role="IQ2nx" value="6272842267441927637" />
       <property role="TrG5h" value="type" />
@@ -152,6 +149,9 @@
       <property role="IQ2nx" value="2771838607458907687" />
       <property role="TrG5h" value="cardinality" />
       <ref role="AX2Wp" node="5sdBcUEW8a5" resolve="Cardinality" />
+    </node>
+    <node concept="PrWs8" id="7O0tj5Mhgbx" role="PzmwI">
+      <ref role="PrY4T" to="tpce:6TyNL3imAnw" resolve="INamedAspect" />
     </node>
   </node>
   <node concept="25R3W" id="5sdBcUEW8a5">

@@ -16,8 +16,6 @@
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
     <dependency reexport="false">50fd4dec-4494-4a71-a0ca-d35c48af6670(de.itemis.mps.editor.diagram.layout#4341402299005877448)</dependency>
     <dependency reexport="false">67b3c41d-58b3-4756-b971-30bf8a9d63e6(jetbrains.jetpad)</dependency>
-    <dependency reexport="false">85ae784e-e91f-4341-b347-054a25865cf6(entities)</dependency>
-    <dependency reexport="false">ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3(functions)</dependency>
     <dependency reexport="false">f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</dependency>
   </dependencies>
   <languageVersions>
