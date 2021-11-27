@@ -12,6 +12,7 @@
     <import index="rzg4" ref="f95d8095-3fe6-49dd-95c7-a45487b8d80a/java:lombok(entity/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="wq9u" ref="ec1ab516-e065-4df7-b87a-a6561f2294ad/i:f020202(entity.generator/entity.generator@descriptor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -687,7 +688,7 @@
   </node>
   <node concept="312cEu" id="7O0tj5MfglA">
     <property role="TrG5h" value="map_Entity" />
-    <property role="2HnT6v" value="Test" />
+    <property role="2HnT6v" value="domain" />
     <node concept="312cEg" id="7O0tj5MfMme" role="jymVt">
       <property role="TrG5h" value="aField" />
       <node concept="3Tm6S6" id="7O0tj5MfLU6" role="1B3o_S" />
@@ -910,22 +911,6 @@
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
               <node concept="30H73N" id="7O0tj5MfwZa" role="2Oq$k0" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="17Uvod" id="7O0tj5MhklZ" role="lGtFl">
-      <property role="2qtEX9" value="packageName" />
-      <property role="P4ACc" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107461130800/2791683072064593257" />
-      <node concept="3zFVjK" id="7O0tj5Mhkm0" role="3zH0cK">
-        <node concept="3clFbS" id="7O0tj5Mhkm1" role="2VODD2">
-          <node concept="3cpWs6" id="7O0tj5MhpWy" role="3cqZAp">
-            <node concept="2OqwBi" id="7O0tj5MhqdX" role="3cqZAk">
-              <node concept="30H73N" id="7O0tj5Mhq1_" role="2Oq$k0" />
-              <node concept="3TrcHB" id="7O0tj5MhqmF" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
             </node>
           </node>
         </node>

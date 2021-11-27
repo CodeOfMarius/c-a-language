@@ -74,6 +74,7 @@
         <property id="2771838607459742856" name="type" index="MbBwf" />
       </concept>
       <concept id="4923070884208663520" name="usecase.structure.Module" flags="ng" index="3X0h$2">
+        <property id="9007328109970282259" name="basePackage" index="faM8y" />
         <property id="7430555928485960297" name="uuid" index="3I2F_m" />
         <reference id="5675016922188007806" name="entitySet" index="3NAnMG" />
         <child id="4923070884208663523" name="adapter" index="3X0h$1" />
@@ -601,6 +602,7 @@
   <node concept="3X0h$2" id="4V1HtaXXKaX">
     <property role="3I2F_m" value="4ffd4840-1bcb-43b0-97de-9d3dcc49b16d" />
     <property role="TrG5h" value="Application" />
+    <property role="faM8y" value="de.adesso" />
     <node concept="3X0hAg" id="4V1HtaXXKbb" role="3X0h$1">
       <property role="2ijSc7" value="dc94e315-35ec-48c6-b7aa-f1f16ff82a2d" />
       <property role="TrG5h" value="ApplicationSecondaryAdapter" />
@@ -639,6 +641,9 @@
         <property role="MbBzq" value="5sdBcUEW8a7/MANY" />
         <ref role="MbBzv" node="7ZnwEiPMux4" resolve="StudentEntity" />
       </node>
+    </node>
+    <node concept="MbByW" id="4JnAlYxnciI" role="3X0hXN">
+      <property role="TrG5h" value="get" />
     </node>
   </node>
   <node concept="3XSKCS" id="7ZnwEiPMuwL">
