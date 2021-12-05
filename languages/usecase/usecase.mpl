@@ -4,6 +4,12 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot contentPath="${module}/ressources" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources" type="java_classes">
+      <sourceRoot location="spring-web.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java">
@@ -32,6 +38,10 @@
         <dependency reexport="false">ec1ab516-e065-4df7-b87a-a6561f2294ad(entity.generator)</dependency>
         <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
+        <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+        <dependency reexport="false">8f6725be-608d-433b-98fd-844f816eb05f(jetbrains.mps.ide.make)</dependency>
+        <dependency reexport="false">04727e37-9751-4276-a9c3-07d8bb78686d(gradle_helper)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -59,16 +69,40 @@
         <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+        <module reference="6382d5d3-67ea-4d82-96cb-87ce80b2a257(baseLanguage)" version="0" />
         <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
         <module reference="ec1ab516-e065-4df7-b87a-a6561f2294ad(entity.generator)" version="0" />
+        <module reference="04727e37-9751-4276-a9c3-07d8bb78686d(gradle_helper)" version="0" />
+        <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
+        <module reference="e39e4a59-8cb6-498e-860e-8fa8361c0d90(jetbrains.mps.baseLanguage.scopes)" version="0" />
+        <module reference="8f6725be-608d-433b-98fd-844f816eb05f(jetbrains.mps.ide.make)" version="0" />
+        <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+        <module reference="86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)" version="0" />
+        <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
         <module reference="43bc6b96-a926-4684-8e52-995f0e8f8c34(usecase)" version="0" />
         <module reference="33b8d346-7462-44b4-9c9a-5d77a068d3a5(usecase.generator)" version="0" />
       </dependencyVersions>
       <mapping-priorities />
     </generator>
   </generators>
+  <stubModelEntries>
+    <stubModelEntry path="${module}/ressources/lombok.jar" />
+    <stubModelEntry path="${module}/ressources/spring-core.jar" />
+    <stubModelEntry path="${module}/ressources/spring-data-jpa.jar" />
+    <stubModelEntry path="${module}/ressources/spring-boot.jar" />
+    <stubModelEntry path="${module}/ressources/spring-context.jar" />
+    <stubModelEntry path="${module}/ressources/jakarta.persistence-api.jar" />
+    <stubModelEntry path="${module}/ressources/spring-data-commons.jar" />
+    <stubModelEntry path="${module}/ressources/spring-web.jar" />
+    <stubModelEntry path="${module}/ressources/assertj-core.jar" />
+    <stubModelEntry path="${module}/ressources/mockito-core.jar" />
+    <stubModelEntry path="${module}/ressources/mockito-junit-jupiter.jar" />
+    <stubModelEntry path="${module}/ressources/junit-jupiter-api.jar" />
+    <stubModelEntry path="${module}/ressources/spring-boot-autoconfigure.jar" />
+    <stubModelEntry path="${module}/ressources/spring-boot-test.jar" />
+  </stubModelEntries>
   <sourcePath />
   <dependencies>
     <dependency reexport="false">fa13cc63-c476-4d46-9c96-d53670abe7bc(de.itemis.mps.editor.diagram)</dependency>
@@ -85,7 +119,10 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</dependency>
-    <dependency reexport="false" scope="generate-into">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
+    <dependency reexport="false">04727e37-9751-4276-a9c3-07d8bb78686d(gradle_helper)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />
@@ -112,6 +149,7 @@
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:f4ad079d-bc71-4ffb-9600-9328705cf998:jetbrains.mps.lang.descriptor" version="0" />
     <language slang="l:18bc6592-03a6-4e29-a83a-7ff23bde13ba:jetbrains.mps.lang.editor" version="14" />
+    <language slang="l:602c36ad-cc55-47ff-8c40-73d7f12f035c:jetbrains.mps.lang.editor.forms" version="0" />
     <language slang="l:d7a92d38-f7db-40d0-8431-763b0c3c9f20:jetbrains.mps.lang.intentions" version="1" />
     <language slang="l:ad93155d-79b2-4759-b10c-55123e763903:jetbrains.mps.lang.messages" version="0" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
@@ -124,17 +162,20 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="18" />
     <language slang="l:c72da2b9-7cce-4447-8389-f407dc1158b7:jetbrains.mps.lang.structure" version="9" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
+    <language slang="l:b83431fe-5c8f-40bc-8a36-65e25f4dd253:jetbrains.mps.lang.textGen" version="1" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="ada59ad1-02ba-40fc-9307-e331426b0f51(BetterBaseLanguage)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
+    <module reference="6382d5d3-67ea-4d82-96cb-87ce80b2a257(baseLanguage)" version="0" />
     <module reference="bdd2c112-05e2-4831-9683-a6b983a97fc2(core)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -148,6 +189,7 @@
     <module reference="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
+    <module reference="04727e37-9751-4276-a9c3-07d8bb78686d(gradle_helper)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
     <module reference="fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)" version="0" />
@@ -166,6 +208,8 @@
     <module reference="5ff6a03f-752e-417c-b647-2bef260388ae(modules)" version="0" />
     <module reference="43bc6b96-a926-4684-8e52-995f0e8f8c34(usecase)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+  </extendedLanguages>
 </language>
 

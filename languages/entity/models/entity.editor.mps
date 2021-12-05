@@ -1000,7 +1000,7 @@
                         <node concept="3clFbF" id="2WWroXGSTsr" role="3cqZAp">
                           <node concept="37vLTI" id="2WWroXGSTss" role="3clFbG">
                             <node concept="Xl_RD" id="2WWroXGSTst" role="37vLTx">
-                              <property role="Xl_RC" value="New Entity" />
+                              <property role="Xl_RC" value="NewEntity" />
                             </node>
                             <node concept="2OqwBi" id="2WWroXGSTsu" role="37vLTJ">
                               <node concept="37vLTw" id="2WWroXGSTsv" role="2Oq$k0">

@@ -78,18 +78,8 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
-      <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
-        <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
-        <child id="1883223317721008709" name="body" index="Jncv$" />
-        <child id="1883223317721008711" name="variable" index="JncvA" />
-        <child id="1883223317721008710" name="nodeExpression" index="JncvB" />
-      </concept>
-      <concept id="1883223317721008713" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfVariable" flags="ng" index="JncvC" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
-      </concept>
-      <concept id="1966870290088668512" name="jetbrains.mps.lang.smodel.structure.Enum_MemberLiteral" flags="ng" index="2ViDtV">
-        <reference id="1966870290088668516" name="memberDeclaration" index="2ViDtZ" />
       </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
@@ -102,9 +92,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="5779574625830813396" name="jetbrains.mps.lang.smodel.structure.EnumerationIdRefExpression" flags="ng" index="1XH99k">
-        <reference id="5779574625830813397" name="enumDeclaration" index="1XH99l" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -124,72 +111,6 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
-  <node concept="37WguZ" id="1zT$DkoZDXG">
-    <property role="TrG5h" value="AdapterFactories" />
-    <node concept="37WvkG" id="1zT$DkoZDXH" role="37WGs$">
-      <ref role="37XkoT" to="ljcb:4higIaTkPHM" resolve="Adapter" />
-      <node concept="37Y9Zx" id="1zT$DkoZDXI" role="37ZfLb">
-        <node concept="3clFbS" id="1zT$DkoZDXJ" role="2VODD2">
-          <node concept="Jncv_" id="1zT$DkoZEUj" role="3cqZAp">
-            <ref role="JncvD" to="ljcb:4higIaTkPHJ" resolve="UseCase" />
-            <node concept="1r4N1M" id="1zT$DkoZEV5" role="JncvB" />
-            <node concept="3clFbS" id="1zT$DkoZEUl" role="Jncv$">
-              <node concept="3clFbF" id="1zT$DkoZEW2" role="3cqZAp">
-                <node concept="37vLTI" id="1zT$DkoZFpq" role="3clFbG">
-                  <node concept="2OqwBi" id="1zT$DkoZHb$" role="37vLTx">
-                    <node concept="1XH99k" id="1zT$DkoZGKw" role="2Oq$k0">
-                      <ref role="1XH99l" to="ljcb:1zT$DkoZDX5" resolve="AdapterType" />
-                    </node>
-                    <node concept="2ViDtV" id="1zT$DkoZHqf" role="2OqNvi">
-                      <ref role="2ViDtZ" to="ljcb:1zT$DkoZDX6" resolve="Primary" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="1zT$DkoZF71" role="37vLTJ">
-                    <node concept="1r4Lsj" id="1zT$DkoZEXf" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="1zT$DkoZFf$" role="2OqNvi">
-                      <ref role="3TsBF5" to="ljcb:1zT$DkoZDXg" resolve="type" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="JncvC" id="1zT$DkoZEUm" role="JncvA">
-              <property role="TrG5h" value="parent" />
-              <node concept="2jxLKc" id="1zT$DkoZEUn" role="1tU5fm" />
-            </node>
-          </node>
-          <node concept="Jncv_" id="1zT$DkoZHuM" role="3cqZAp">
-            <ref role="JncvD" to="ljcb:4higIaTkPHM" resolve="Adapter" />
-            <node concept="1r4N1M" id="1zT$DkoZHvS" role="JncvB" />
-            <node concept="3clFbS" id="1zT$DkoZHuQ" role="Jncv$">
-              <node concept="3clFbF" id="1zT$DkoZHA8" role="3cqZAp">
-                <node concept="37vLTI" id="1zT$DkoZHA9" role="3clFbG">
-                  <node concept="2OqwBi" id="1zT$DkoZHAa" role="37vLTx">
-                    <node concept="1XH99k" id="1zT$DkoZHAb" role="2Oq$k0">
-                      <ref role="1XH99l" to="ljcb:1zT$DkoZDX5" resolve="AdapterType" />
-                    </node>
-                    <node concept="2ViDtV" id="1zT$DkoZHR_" role="2OqNvi">
-                      <ref role="2ViDtZ" to="ljcb:1zT$DkoZDX7" resolve="Secondary" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="1zT$DkoZHAd" role="37vLTJ">
-                    <node concept="1r4Lsj" id="1zT$DkoZHAe" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="1zT$DkoZHAf" role="2OqNvi">
-                      <ref role="3TsBF5" to="ljcb:1zT$DkoZDXg" resolve="type" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="JncvC" id="1zT$DkoZHuS" role="JncvA">
-              <property role="TrG5h" value="adapter" />
-              <node concept="2jxLKc" id="1zT$DkoZHuT" role="1tU5fm" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="37WguZ" id="7ZnwEiPR0g7">
     <property role="TrG5h" value="UseCaseFactory" />
     <node concept="37WvkG" id="7ZnwEiPR0gq" role="37WGs$">
