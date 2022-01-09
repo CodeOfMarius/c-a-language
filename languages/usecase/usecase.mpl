@@ -127,6 +127,7 @@
   <languageVersions>
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
+    <language slang="l:f95d8095-3fe6-49dd-95c7-a45487b8d80a:entity" version="0" />
     <language slang="l:ce54bfd4-cf66-4d27-88d9-bdbbc8bb70d3:functions" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
@@ -210,6 +211,7 @@
   </dependencyVersions>
   <extendedLanguages>
     <extendedLanguage>f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</extendedLanguage>
+    <extendedLanguage>f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</extendedLanguage>
   </extendedLanguages>
 </language>
 

@@ -199,9 +199,26 @@
                 <node concept="lc7rE" id="5m962Il62F6" role="3cqZAp">
                   <node concept="2BGw6n" id="5m962ImhEMN" role="lcghm" />
                   <node concept="la8eA" id="5m962Il62F7" role="lcghm">
-                    <property role="lacIc" value="implementation 'org.springframework.boot:spring-boot-starter-jpa'" />
+                    <property role="lacIc" value="implementation 'org.springframework.boot:spring-boot-starter-data-jpa'" />
                   </node>
                   <node concept="l8MVK" id="5m962Imh$rA" role="lcghm" />
+                </node>
+                <node concept="3clFbJ" id="496I9$BUhmf" role="3cqZAp">
+                  <node concept="3clFbS" id="496I9$BUhmh" role="3clFbx">
+                    <node concept="lc7rE" id="496I9$BUhUT" role="3cqZAp">
+                      <node concept="2BGw6n" id="496I9$BUhUU" role="lcghm" />
+                      <node concept="la8eA" id="496I9$BUhUV" role="lcghm">
+                        <property role="lacIc" value="runtimeOnly 'com.h2database:h2''" />
+                      </node>
+                      <node concept="l8MVK" id="496I9$BUhUW" role="lcghm" />
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="496I9$BUhNp" role="3clFbw">
+                    <node concept="117lpO" id="496I9$BUhG9" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="496I9$BUhUs" role="2OqNvi">
+                      <ref role="3TsBF5" to="ubua:496I9$BUhmN" resolve="main" />
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="2OqwBi" id="5m962Il62F8" role="3clFbw">
@@ -598,7 +615,13 @@
               </node>
               <node concept="l8MVK" id="5416Y5w3O5M" role="lcghm" />
             </node>
-            <node concept="3clFbH" id="5416Y5w3O5t" role="3cqZAp" />
+            <node concept="lc7rE" id="496I9$BJE8d" role="3cqZAp">
+              <node concept="2BGw6n" id="496I9$BJE8e" role="lcghm" />
+              <node concept="la8eA" id="496I9$BJE8f" role="lcghm">
+                <property role="lacIc" value="id 'application'" />
+              </node>
+              <node concept="l8MVK" id="496I9$BJE8g" role="lcghm" />
+            </node>
           </node>
         </node>
         <node concept="lc7rE" id="5m962Il6vUT" role="3cqZAp">
@@ -617,6 +640,28 @@
         </node>
         <node concept="3izx1p" id="5416Y5w3Grl" role="3cqZAp">
           <node concept="3clFbS" id="5416Y5w3Grn" role="3izTki">
+            <node concept="lc7rE" id="5416Y5w3GWI" role="3cqZAp">
+              <node concept="2BGw6n" id="5416Y5w3GWJ" role="lcghm" />
+              <node concept="la8eA" id="5416Y5w3GWK" role="lcghm">
+                <property role="lacIc" value="apply plugin: 'java'" />
+              </node>
+              <node concept="l8MVK" id="5416Y5w3GWQ" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="5416Y5w3GWR" role="3cqZAp">
+              <node concept="2BGw6n" id="5416Y5w3GWS" role="lcghm" />
+              <node concept="la8eA" id="5416Y5w3GWT" role="lcghm">
+                <property role="lacIc" value="apply plugin: 'io.spring.dependency-management'" />
+              </node>
+              <node concept="l8MVK" id="5416Y5w3GWU" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="5416Y5w3MzU" role="3cqZAp">
+              <node concept="2BGw6n" id="5416Y5w3MzV" role="lcghm" />
+              <node concept="la8eA" id="5416Y5w3MzW" role="lcghm">
+                <property role="lacIc" value="apply plugin: 'org.springframework.boot'" />
+              </node>
+              <node concept="l8MVK" id="5416Y5w3MzX" role="lcghm" />
+            </node>
+            <node concept="3clFbH" id="5416Y5w3GVk" role="3cqZAp" />
             <node concept="lc7rE" id="5416Y5w3Gtl" role="3cqZAp">
               <node concept="2BGw6n" id="5416Y5w3GEL" role="lcghm" />
               <node concept="la8eA" id="5416Y5w3Gtm" role="lcghm">
@@ -652,29 +697,7 @@
             <node concept="lc7rE" id="5416Y5w3Gtz" role="3cqZAp">
               <node concept="l8MVK" id="5416Y5w3Gt$" role="lcghm" />
             </node>
-            <node concept="3clFbH" id="5416Y5w3GTV" role="3cqZAp" />
-            <node concept="lc7rE" id="5416Y5w3GWI" role="3cqZAp">
-              <node concept="2BGw6n" id="5416Y5w3GWJ" role="lcghm" />
-              <node concept="la8eA" id="5416Y5w3GWK" role="lcghm">
-                <property role="lacIc" value="apply plugin: 'java'" />
-              </node>
-              <node concept="l8MVK" id="5416Y5w3GWQ" role="lcghm" />
-            </node>
-            <node concept="lc7rE" id="5416Y5w3GWR" role="3cqZAp">
-              <node concept="2BGw6n" id="5416Y5w3GWS" role="lcghm" />
-              <node concept="la8eA" id="5416Y5w3GWT" role="lcghm">
-                <property role="lacIc" value="apply plugin: 'io.spring.dependency-management'" />
-              </node>
-              <node concept="l8MVK" id="5416Y5w3GWU" role="lcghm" />
-            </node>
-            <node concept="lc7rE" id="5416Y5w3MzU" role="3cqZAp">
-              <node concept="2BGw6n" id="5416Y5w3MzV" role="lcghm" />
-              <node concept="la8eA" id="5416Y5w3MzW" role="lcghm">
-                <property role="lacIc" value="apply plugin: 'org.springframework.boot'" />
-              </node>
-              <node concept="l8MVK" id="5416Y5w3MzX" role="lcghm" />
-            </node>
-            <node concept="3clFbH" id="5416Y5w3GVk" role="3cqZAp" />
+            <node concept="3clFbH" id="496I9$BcH9i" role="3cqZAp" />
             <node concept="3clFbH" id="5416Y5w3Gt_" role="3cqZAp" />
             <node concept="lc7rE" id="5416Y5w3GtA" role="3cqZAp">
               <node concept="2BGw6n" id="5416Y5w3GHF" role="lcghm" />

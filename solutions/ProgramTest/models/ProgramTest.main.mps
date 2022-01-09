@@ -80,7 +80,6 @@
       <concept id="4923070884208663410" name="usecase.structure.Adapter" flags="ng" index="3X0hAg">
         <property id="1799630695178346320" name="type" index="01KR5" />
         <property id="6753910564066768600" name="uuid" index="2ijSc7" />
-        <property id="5675016922187381017" name="url" index="3NzCNb" />
         <reference id="5675016922193050661" name="reference" index="3Np0BR" />
         <child id="3278293599687424430" name="functions" index="3bGeW6" />
         <child id="4923070884208663514" name="calls" index="3X0h$S" />
@@ -248,8 +247,8 @@
     <property role="TrG5h" value="mainModule" />
     <property role="faM8y" value="de" />
     <property role="asS77" value="true" />
-    <node concept="3X0h$H" id="5416Y5yU2KQ" role="3X0h$3">
-      <ref role="3X0h$M" node="5416Y5yU2KP" resolve="New Use Case" />
+    <node concept="3X0h$H" id="496I9$AL5iM" role="3X0h$3">
+      <ref role="3X0h$M" node="496I9$AL5iL" resolve="ShouldNotBeGenerated" />
     </node>
   </node>
   <node concept="3X0h$2" id="5m962Il62Qn">
@@ -285,17 +284,6 @@
     <property role="TrG5h" value="JohannesSeinModul" />
     <property role="faM8y" value="de" />
     <ref role="3NAnMG" node="5416Y5yFYyb" resolve="JohannesSeinModulEntitiySet" />
-    <node concept="3X0h$H" id="5416Y5yQ$7g" role="3X0h$3">
-      <ref role="3X0h$M" node="5416Y5yQ$7f" resolve="NewUseCase" />
-    </node>
-    <node concept="3X0hAg" id="5416Y5yQBVN" role="3X0h$1">
-      <property role="2ijSc7" value="846b6959-13c6-478f-9b95-238b806545b2" />
-      <property role="TrG5h" value="PrimaryAdapter" />
-      <property role="01KR5" value="1zT$DkoZDX6/Primary" />
-      <node concept="3X0h$H" id="5416Y5yQBVP" role="3X0h$S">
-        <ref role="3X0h$M" node="5416Y5yQ$7f" resolve="NewUseCase" />
-      </node>
-    </node>
     <node concept="3X0hAg" id="5416Y5yQFST" role="3X0h$1">
       <property role="2ijSc7" value="ce08b562-38d6-4fb7-9c76-c7c32f576776" />
       <property role="TrG5h" value="SecondaryAdapter" />
@@ -311,29 +299,6 @@
         </node>
       </node>
     </node>
-    <node concept="3X0hAg" id="5416Y5yQJL1" role="3X0h$1">
-      <property role="2ijSc7" value="efac2de7-3adb-4d2a-a058-b2c9577e3efb" />
-      <property role="TrG5h" value="WebAdapter" />
-      <property role="01KR5" value="4V1HtaXjslp/Web" />
-      <property role="3NzCNb" value="test" />
-      <node concept="3X0h$H" id="5416Y5yQJL9" role="3X0h$S">
-        <ref role="3X0h$M" node="5416Y5yQ$7f" resolve="NewUseCase" />
-      </node>
-    </node>
-    <node concept="3X0hAg" id="5416Y5yS8OD" role="3X0h$1">
-      <property role="2ijSc7" value="67b4bd33-cd22-4af4-9c25-5febd0b5586f" />
-      <property role="TrG5h" value="Primary" />
-      <property role="01KR5" value="1zT$DkoZDX6/Primary" />
-      <node concept="3X0h$H" id="5416Y5yScP$" role="3X0h$S">
-        <ref role="3X0h$M" node="5416Y5yS8OR" resolve="NewUseCase2" />
-      </node>
-    </node>
-    <node concept="3X0h$H" id="5416Y5yS8OO" role="3X0h$3">
-      <ref role="3X0h$M" node="5416Y5yS8ON" resolve="New3Use3Case" />
-    </node>
-    <node concept="3X0h$H" id="5416Y5yS8OS" role="3X0h$3">
-      <ref role="3X0h$M" node="5416Y5yS8OR" resolve="NewUseCase2" />
-    </node>
   </node>
   <node concept="3XSKCS" id="5416Y5yFYyb">
     <property role="TrG5h" value="JohannesSeinModulEntitiySet" />
@@ -348,34 +313,9 @@
       </node>
     </node>
   </node>
-  <node concept="3X0hAd" id="5416Y5yQ$7f">
-    <property role="2iiYil" value="54c28e9a-9631-40bc-b84a-5c480190826d" />
-    <property role="TrG5h" value="NewUseCase" />
-    <property role="16JeDi" value="5rpu5Ggpp86/UseCase" />
-    <node concept="MbByW" id="5416Y5yQ$7i" role="3X0hXN">
-      <property role="TrG5h" value="test" />
-      <node concept="MbBzg" id="5416Y5yQ$7k" role="MbBAT">
-        <property role="TrG5h" value="student" />
-        <ref role="MbBzv" node="5416Y5yFYyc" resolve="NewEntity" />
-      </node>
-      <node concept="MbBxE" id="5416Y5yQ$7m" role="MbBB7">
-        <property role="MbBxD" value="7O0tj5MfXm7/Boolean" />
-      </node>
-    </node>
-  </node>
-  <node concept="3X0hAd" id="5416Y5yS8ON">
-    <property role="2iiYil" value="aa40759a-40ce-4257-8d57-4a6dedd8b265" />
-    <property role="TrG5h" value="New3Use3Case" />
-    <property role="16JeDi" value="5rpu5Ggpp86/UseCase" />
-  </node>
-  <node concept="3X0hAd" id="5416Y5yS8OR">
-    <property role="2iiYil" value="120726f2-6587-4dd2-95c9-4c8cda43685d" />
-    <property role="TrG5h" value="NewUseCase2" />
-    <property role="16JeDi" value="5rpu5Ggpp86/UseCase" />
-  </node>
-  <node concept="3X0hAd" id="5416Y5yU2KP">
-    <property role="2iiYil" value="c939e753-a37e-46a4-9335-25a6c885add7" />
-    <property role="TrG5h" value="New Use Case" />
+  <node concept="3X0hAd" id="496I9$AL5iL">
+    <property role="2iiYil" value="773b513d-48ae-4603-adc0-12a2c925f62f" />
+    <property role="TrG5h" value="ShouldNotBeGenerated" />
     <property role="16JeDi" value="5rpu5Ggpp86/UseCase" />
   </node>
 </model>
