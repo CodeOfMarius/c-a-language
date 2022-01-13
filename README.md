@@ -13,7 +13,7 @@ Die Sprache wird über GitHub verwaltet und das Repository findet sich [hier].
 
 ## Erstellte Sprachen
 
-In dem Repository befinden sich vier Sprachen, von denen drei verschiedene Abstraktionsebenen der Architektur darstellen (entity, usecase und modules) und eine unterstützende Sprache (gradle-hilper), die die anderen Sprachen unterstützt.
+In dem Repository befinden sich vier Sprachen, von denen drei verschiedene Abstraktionsebenen der Architektur darstellen (entity, usecase und modules) und eine unterstützende Sprache (gradle-helper), die die anderen Sprachen unterstützt.
 
 ### Entity Sprache
 Die Entity-Sprache bietet Konzepte für die Erfassung von Domänenobjekten und kann rudimentäre Java-Objekte erzeugen.
@@ -59,6 +59,7 @@ Die DSL unterstützt das Erfassen von Attributen bei Domänenobjekten und Funkti
 ### Enity Editoren
 
 ![EntitySetEditor](https://user-images.githubusercontent.com/18488010/149176645-9ffc2b40-03df-4b28-990b-c052e1f8ac8e.PNG)
+
 Der textuelle Editor beinhaltet die Möglichkeit zur Erfassung von Domänenobjekten.
 Dazu kann zunächst der Name des Objekts festgelegt werden.
 Danach kann eingestellt werden, ob das Domänenobjekt persistiert wird und ob CRUD-Operationen bereitgestellt werden sollen.
@@ -70,11 +71,13 @@ Dabei sind nur simple unidirektionalle Assoziationen zwischen den Objekten mögl
 Falls nur die Entity-Sprache genutzt wird, sind die Eisntellungsmöglichkeiten für CRUD-Opretationen, Persistenz und Primär-Eigenschaft irrelevant und können vom Nutzer ignoriert werden.
 
 ![EntitySetEditor_graphic](https://user-images.githubusercontent.com/18488010/149176650-bae333e8-5976-4aea-95f7-32da30a01bc1.PNG)
+
 Der graphische Editor bietet die selben Möglichkeiten wie der textuelle Editor. Es orientiert sich an der UML für Klassendiagramme.
 Die Optionen füe persistenz, CRUD und Primärattribut sind jeweils in den Inspektor ausgelagert.
 
 ### Usecase Editoren
 ![UseCaseTextEditor](https://user-images.githubusercontent.com/18488010/149178106-1c2a30cf-cc4f-4630-96ec-0c8aa52e749a.png)
+
 Der textuelle Editor für die Anwendugnsfälle erfordert zunächst das festlegen des Namens des Anwendungsfalls.
 Danach wird der Typ des Anwendungsfalls angegeben. Zur Auswahl stehen dabei "UseCase", was aussagt, das es sich um einen schreibenden Anwendungsfall handelt, und "Query", falls es sich um einen rein lesenden Anwendungsfall handelt.
 Durch diese Angabe landen die generierten Klassen in verschiedenen Paketen, um eine bessere Strukturierung der Anwendungsfälle erlaubt.
@@ -83,25 +86,68 @@ Hierbei kann auf die Domänenobjekte, die im Modul hinterlegt sind, zugegriffen 
 Danach können weitere Anwendungsfälle definiert werden, auf die der Anwendungsfall später zugreift.
 Abschließend können Adapter festgelegt werden, die der Anwendungsfall später nutzt.
 Die Adapter stammen ebenfalls aus dem Modul, dem der Anwendungsfall zugeordnet ist.
+Für das Erstellen eines Anwendungsfalls gibt es keinen grafischen Editor, stattdessen können diese Einstellung im grafischen Edotir der Module vorgenommen werden.
 
 ![Module](https://user-images.githubusercontent.com/18488010/149178103-8c7ef03c-308a-4db9-a608-2945cb37aab5.PNG)
+
 Der Modul Editor erlaubt es, verschiedene Anwendugfälle zu einem Gradle-Modul zu bündeln.
 Dazu wird zunächst der Name des Moduls erfasst.
 Anschließend wird der Paketname für das Modul festgehalten und danach wird bestimmt, ob eine main-Methode für das Modul erstellt werden soll.
 Im Anschluß wird das Set an entitäten ausgewählt, das für dieses Modul genutzt wird, bzw. ein neues Set erstellt werden.
+Danach werden die Anwendungsfälle dem Modul zugeordnet  bzw. es lassen sich direkt neue Anwendungsfälle erstellen.
+Abschließend lassen sich die Adapter für das Modul erstellen.
+Dabei gibt es 4 verschiedene Adaptertypen:
+- Primäre Adapter: Zugriff auf das Modul als interne Schnittstelle
+- Sekundäre Adapter: Zugriff auf andere Module
+- Web-Adapter: Rest-Controller für den Zugriff auf das Modul
+- DB-Adapter: Zugriff auf die Datenbank
+
 ![Module_Graphic](https://user-images.githubusercontent.com/18488010/149178107-6516c44f-5c13-4ece-bef4-dac82556fd74.PNG)
+
+Der grafische Editor bietet die selben Einstellungsmöglichkeiten wie der textuelle.
+Die Moduleinstellungen befinden sich dabei im Inpektor des Moduls selbst.
+Die Adapter und Anwendugnsfälle lassen sich jeweils durch Auswahl des jeweiligen Adapters bzw. Anwendungsfall.
+Der rechte Button dient zur Verbindug der jeweiligen Komponenten.
+Dabei steht der Buchstabe, um welche Art der Verbindung es sich handelt
+- A: Anwendungsfall zu Anwendungsfall
+- B: Verbindung von Adapter auf Anwendungsfall
+- C. Anwendfall zu Adapter
+
+Eine Verbindung zwischen zwei Adaptern ist nicht möglich.
 
 ### Modules
 ![Programm](https://user-images.githubusercontent.com/18488010/149186097-cf4b4f99-4132-49d6-bf70-c4719acbe8c5.PNG)
-![Program_graphic](https://user-images.githubusercontent.com/18488010/149186099-012cf6fa-237d-4cf6-86ed-009cc385279b.PNG)
- Editoren
 
-### Troubleshooting bei der Erstellung neuer Lösungen
+Der Programm Editor erlaubt das bündeln von verschiedenen Modulen zu einem Multi-Modul-Gradle-Projekt verbinden.
+Dazu wird zunächst der Name des Programms festgelegt, bevor die Module dem Programm zugeordnet werden.
+Anschließend können Beziehungen zwischen Modulen definiert werden.
+Zur Auswahl stehen zwei verschiedene Typen:
+- Submodul: Zeigt an, dass ein Modul ein Submodul eines anderen ist. Für das Vater-Modul wird kein Quellcode erzeugt!
+- Dependency: Zeigt an, das ein Modul auf ein anderes Modul eine Beziehung auf ein anderes Modul hat
+
+![Program_graphic](https://user-images.githubusercontent.com/18488010/149186099-012cf6fa-237d-4cf6-86ed-009cc385279b.PNG)
+ 
+ Der grafische Editor der Module bietet die selben Möglichkeiten des textuellen Editors.
+ Der Name des Programms wird dabei im Inspecor festgelegt.
+ Die Assoziationen zwischen den Modulen lassen sich wie bei den Anwendungsfällen erstellen.
+ Daei gilt:
+ - S für Submodul (abgebildet durch eine offene Pfeilspitze
+ - D für Dependency (abgebildet durch eine gefüllte Pfeilspitze)
 
 ### Generierung von Quellcode
+Durch das Ausführen der Lösung wird der entsprechende Quellcode erzeugt.
+Dieser findet sich unter dem Lösungsordner im Dateisystem unter src_gen.
+
+### Troubleshooting bei der Erstellung neuer Lösungen
+Ein bekannter Fehler ist, das die grafischen Editoren auf das fehlende Modul "de.itemis.mps.editor.diagram.layout" aufzeigen. Dies kann dadurch behoben werdn, dass dieses als Sprache in der Lösung eingebunden wird. Die Funktion des Editors wird nicht weiter Eingeschränkt.
+Falls es während der Generieung des Quellcode eine Meldung zu fehlenden Jars kommt können diese in die Lösung eingebunden werden. Die entsprechenden Jars befinden sich unter dem Ordner ressourcen der jeweilgigen Sprachen.
 
 ## Integration in IntelliJ
-
+Für die Verwendung der DSL in IntelliJ muss zunächst IntelliJ selbst vorbereitet werden. Dazu kann folgende Anleitung genutzt werden: https://www.jetbrains.com/help/mps/using-mps-inside-intellij-idea.html.
+Danach kann das IntelliJ-Plugin installiert werden.
+Dieses findet sich unter plugin/intellij.
+Die grafischen Editoren können leider nicht in IntelliJ genutzt werden, da das entsprechende Plugin für die grafischen Editoren von IntelliJ nicht unterstützt wird.
+Die textuellen Editoren können weiterhin genutzt werden.
 
    [Marius Wagner]: <https://github.com/CodeOfMarius>
    [hier]: <https://github.com/CodeOfMarius/c-a-language>
