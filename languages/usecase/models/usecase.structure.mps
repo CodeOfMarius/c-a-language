@@ -42,6 +42,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -82,7 +83,8 @@
     <property role="EcuMT" value="4923070884208663407" />
     <property role="TrG5h" value="UseCase" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="usecase" />
+    <property role="34LRSv" value="UseCase" />
+    <property role="R4oN_" value="UseCase" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4higIaTkPHK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -152,6 +154,8 @@
     <property role="EcuMT" value="4923070884208663410" />
     <property role="TrG5h" value="Adapter" />
     <property role="3GE5qa" value="adapter" />
+    <property role="34LRSv" value="Adapter" />
+    <property role="R4oN_" value="Adapter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4higIaTkPHN" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -212,6 +216,8 @@
     <property role="EcuMT" value="4923070884208663500" />
     <property role="TrG5h" value="AdapterReference" />
     <property role="3GE5qa" value="adapter" />
+    <property role="34LRSv" value="AdapterReference" />
+    <property role="R4oN_" value="AdapterReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4higIaTkPJd" role="1TKVEi">
       <property role="IQ2ns" value="4923070884208663501" />
@@ -223,6 +229,8 @@
   <node concept="1TIwiD" id="4higIaTkPJf">
     <property role="EcuMT" value="4923070884208663503" />
     <property role="TrG5h" value="UseCaseReference" />
+    <property role="34LRSv" value="UseCaseReference" />
+    <property role="R4oN_" value="UseCaseReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4higIaTkPJg" role="1TKVEi">
       <property role="IQ2ns" value="4923070884208663504" />
@@ -240,6 +248,7 @@
     <property role="34LRSv" value="Module" />
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="gradle" />
+    <property role="R4oN_" value="Module" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4higIaTkPJx" role="1TKVEi">
       <property role="IQ2ns" value="4923070884208663521" />
@@ -343,6 +352,8 @@
     <property role="EcuMT" value="2633721123701195168" />
     <property role="TrG5h" value="ModuleReference" />
     <property role="3GE5qa" value="gradle" />
+    <property role="34LRSv" value="ModuleReference" />
+    <property role="R4oN_" value="ModuleReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2icQQxJDK6x" role="1TKVEi">
       <property role="IQ2ns" value="2633721123701195169" />
@@ -354,6 +365,8 @@
   <node concept="1TIwiD" id="5QUHtZfZ3cV">
     <property role="EcuMT" value="6753910564067226427" />
     <property role="TrG5h" value="UseCaseRelation" />
+    <property role="34LRSv" value="UseCaseRelation" />
+    <property role="R4oN_" value="UseCaseRelation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4V1HtaXGvq0" role="1TKVEi">
       <property role="IQ2ns" value="5675016922193852032" />
@@ -384,6 +397,8 @@
     <property role="EcuMT" value="5675016922190981521" />
     <property role="TrG5h" value="EntityReference" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="EntityReference" />
+    <property role="R4oN_" value="EntityReference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4V1HtaXxyA$" role="1TKVEi">
       <property role="IQ2ns" value="5675016922190981540" />
@@ -396,6 +411,8 @@
     <property role="EcuMT" value="2771838607459742779" />
     <property role="TrG5h" value="Function" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="Function" />
+    <property role="R4oN_" value="Function" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2pRz8skmvgW" role="PzmwI">
       <ref role="PrY4T" to="tpce:6TyNL3imAnw" resolve="INamedAspect" />
@@ -419,6 +436,8 @@
     <property role="TrG5h" value="Parameter" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="Parameter" />
+    <property role="R4oN_" value="Parameter" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2pRz8skmvhl" role="PzmwI">
       <ref role="PrY4T" to="tpce:6TyNL3imAnw" resolve="INamedAspect" />
@@ -436,6 +455,8 @@
     <property role="EcuMT" value="2771838607459742807" />
     <property role="TrG5h" value="EntityParameter" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="EntityParameter" />
+    <property role="R4oN_" value="EntityParameter" />
     <ref role="1TJDcQ" node="2pRz8skmvhk" resolve="Parameter" />
     <node concept="1TJgyj" id="2pRz8skmvho" role="1TKVEi">
       <property role="IQ2ns" value="2771838607459742808" />
@@ -448,6 +469,8 @@
     <property role="EcuMT" value="2771838607459742810" />
     <property role="TrG5h" value="BaseParameter" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="BaseParameter" />
+    <property role="R4oN_" value="BaseParameter" />
     <ref role="1TJDcQ" node="2pRz8skmvhk" resolve="Parameter" />
     <node concept="1TJgyi" id="2pRz8skmvi8" role="1TKVEl">
       <property role="IQ2nx" value="2771838607459742856" />
@@ -460,6 +483,8 @@
     <property role="TrG5h" value="ReturnValue" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="ReturnValue" />
+    <property role="R4oN_" value="ReturnValue" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2pRz8skmvjF" role="1TKVEl">
       <property role="IQ2nx" value="2771838607459742955" />
@@ -471,6 +496,8 @@
     <property role="EcuMT" value="2771838607459742952" />
     <property role="TrG5h" value="EntityReturnValue" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="EntityReturnValue" />
+    <property role="R4oN_" value="EntityReturnValue" />
     <ref role="1TJDcQ" node="2pRz8skmvjB" resolve="ReturnValue" />
     <node concept="1TJgyj" id="2pRz8skmvjD" role="1TKVEi">
       <property role="IQ2ns" value="2771838607459742953" />
@@ -483,6 +510,8 @@
     <property role="EcuMT" value="2771838607459742957" />
     <property role="TrG5h" value="BaseReturnValue" />
     <property role="3GE5qa" value="function" />
+    <property role="34LRSv" value="BaseReturnValue" />
+    <property role="R4oN_" value="BaseReturnValue" />
     <ref role="1TJDcQ" node="2pRz8skmvjB" resolve="ReturnValue" />
     <node concept="1TJgyi" id="2pRz8skmvjI" role="1TKVEl">
       <property role="IQ2nx" value="2771838607459742958" />
@@ -494,6 +523,8 @@
     <property role="EcuMT" value="2439266313070241787" />
     <property role="TrG5h" value="UseCaseTestCase" />
     <property role="3GE5qa" value="tests" />
+    <property role="34LRSv" value="UseCaseTestCase" />
+    <property role="R4oN_" value="UseCaseTestCase" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="27q0WAR8evW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -506,6 +537,8 @@
     <property role="EcuMT" value="2439266313070241798" />
     <property role="TrG5h" value="UseCaseInterface" />
     <property role="3GE5qa" value="interface" />
+    <property role="34LRSv" value="UseCaseInterface" />
+    <property role="R4oN_" value="UseCaseInterface" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="27q0WAR8ew7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -518,6 +551,8 @@
     <property role="EcuMT" value="1146719543537216403" />
     <property role="3GE5qa" value="interface" />
     <property role="TrG5h" value="AdapterInterface" />
+    <property role="34LRSv" value="AdapterInterface" />
+    <property role="R4oN_" value="AdapterInterface" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5f4e8cCpvEe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -530,6 +565,8 @@
     <property role="EcuMT" value="1146719543537216413" />
     <property role="3GE5qa" value="tests" />
     <property role="TrG5h" value="AdapterTest" />
+    <property role="34LRSv" value="AdapterTest" />
+    <property role="R4oN_" value="AdapterTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RPRiBw_vro" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -542,6 +579,8 @@
     <property role="EcuMT" value="1146719543537216431" />
     <property role="3GE5qa" value="adapter.db" />
     <property role="TrG5h" value="AdapterRepository" />
+    <property role="34LRSv" value="AdapterRepository" />
+    <property role="R4oN_" value="AdapterRepository" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="ZDXP_DyaIX" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -565,6 +604,8 @@
     <property role="EcuMT" value="9076403795966442983" />
     <property role="3GE5qa" value="domain" />
     <property role="TrG5h" value="ModuleEntity" />
+    <property role="34LRSv" value="ModuleEntity" />
+    <property role="R4oN_" value="ModuleEntity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7RPRiBw_zRC" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -604,6 +645,8 @@
     <property role="EcuMT" value="3634482642826439241" />
     <property role="3GE5qa" value="adapter.db" />
     <property role="TrG5h" value="DbEntity" />
+    <property role="34LRSv" value="DbEntity" />
+    <property role="R4oN_" value="DbEntity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="39KhFkjZyDa" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -633,6 +676,8 @@
     <property role="EcuMT" value="3634482642826874065" />
     <property role="3GE5qa" value="adapter.db" />
     <property role="TrG5h" value="DbEntityMapper" />
+    <property role="34LRSv" value="DbEntityMapper" />
+    <property role="R4oN_" value="DbEntityMapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="39KhFkkeX4W" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -642,6 +687,8 @@
     <property role="EcuMT" value="6036011536569056819" />
     <property role="TrG5h" value="TempModule" />
     <property role="3GE5qa" value="gradle" />
+    <property role="34LRSv" value="TempModule" />
+    <property role="R4oN_" value="TempModule" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5f4e8cDmVSO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -651,6 +698,8 @@
     <property role="EcuMT" value="420446561570551254" />
     <property role="3GE5qa" value="adapter.primary" />
     <property role="TrG5h" value="DtoEntity" />
+    <property role="34LRSv" value="DtoEntity" />
+    <property role="R4oN_" value="DtoEntity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="nlIuIdsBnn" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -674,6 +723,8 @@
     <property role="EcuMT" value="420446561570551257" />
     <property role="3GE5qa" value="adapter.primary" />
     <property role="TrG5h" value="DtoEntityMapper" />
+    <property role="34LRSv" value="DtoEntityMapper" />
+    <property role="R4oN_" value="DtoEntityMapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="nlIuIdsBnq" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -683,6 +734,8 @@
     <property role="EcuMT" value="420446561570700041" />
     <property role="3GE5qa" value="adapter.web" />
     <property role="TrG5h" value="WebEntity" />
+    <property role="34LRSv" value="WebEntity" />
+    <property role="R4oN_" value="WebEntity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="nlIuIdtbGa" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -706,6 +759,8 @@
     <property role="EcuMT" value="420446561570710449" />
     <property role="3GE5qa" value="adapter.web" />
     <property role="TrG5h" value="WebEntityMapper" />
+    <property role="34LRSv" value="WebEntityMapper" />
+    <property role="R4oN_" value="WebEntityMapper" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="nlIuIdteeM" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -714,12 +769,16 @@
   <node concept="1TIwiD" id="1cPcj3zBFlr">
     <property role="EcuMT" value="1384066546533315931" />
     <property role="TrG5h" value="CrudUseCase" />
+    <property role="34LRSv" value="CrudUseCase" />
+    <property role="R4oN_" value="CrudUseCase" />
     <ref role="1TJDcQ" node="4higIaTkPHJ" resolve="UseCase" />
   </node>
   <node concept="1TIwiD" id="3op9xNPeI1F">
     <property role="EcuMT" value="3898188858281091179" />
     <property role="3GE5qa" value="adapter.db" />
     <property role="TrG5h" value="DbEntityMapperTest" />
+    <property role="34LRSv" value="DbEntityMapperTest" />
+    <property role="R4oN_" value="DbEntityMapperTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3op9xNPeI1G" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -729,6 +788,8 @@
     <property role="EcuMT" value="3898188858339689854" />
     <property role="3GE5qa" value="domain" />
     <property role="TrG5h" value="TestUtil" />
+    <property role="34LRSv" value="TestUtil" />
+    <property role="R4oN_" value="TestUtil" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3op9xNSIglZ" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -738,6 +799,8 @@
     <property role="EcuMT" value="7509771619447833085" />
     <property role="3GE5qa" value="adapter.web" />
     <property role="TrG5h" value="WebEntityMapperTest" />
+    <property role="34LRSv" value="WebEntityMapperTest" />
+    <property role="R4oN_" value="WebEntityMapperTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6wS4nZpvS7Y" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -747,6 +810,8 @@
     <property role="EcuMT" value="7509771619458063442" />
     <property role="3GE5qa" value="adapter.primary" />
     <property role="TrG5h" value="DtoEntityMapperTest" />
+    <property role="34LRSv" value="DtoEntityMapperTest" />
+    <property role="R4oN_" value="DtoEntityMapperTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6wS4nZq6TLj" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -756,6 +821,8 @@
     <property role="EcuMT" value="7965504893112562323" />
     <property role="TrG5h" value="MainClass" />
     <property role="3GE5qa" value="gradle" />
+    <property role="34LRSv" value="MainClass" />
+    <property role="R4oN_" value="MainClass" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6Uba7XaB3ak" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -775,6 +842,8 @@
     <property role="EcuMT" value="7965504893112562326" />
     <property role="TrG5h" value="MainClassTest" />
     <property role="3GE5qa" value="gradle" />
+    <property role="34LRSv" value="MainClassTest" />
+    <property role="R4oN_" value="MainClassTest" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6Uba7XaB3an" role="PzmwI">
       <ref role="PrY4T" node="ZDXP_DyaIK" resolve="IPackage" />
@@ -784,6 +853,8 @@
     <property role="EcuMT" value="6163484140457141984" />
     <property role="3GE5qa" value="gradle" />
     <property role="TrG5h" value="ModuleDependency" />
+    <property role="34LRSv" value="ModuleDependency" />
+    <property role="R4oN_" value="ModuleDependency" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5m962IiGUrx" role="1TKVEl">
       <property role="IQ2nx" value="6163484140457141985" />

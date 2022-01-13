@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f95d8095-3fe6-49dd-95c7-a45487b8d80a" name="entity" version="0" />
+    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports />
   <registry>
@@ -43,6 +44,7 @@
         <property id="4583510071007917016" name="transform" index="TgtnS" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
+        <child id="2319506556913311101" name="anchors" index="2Vcluh" />
         <child id="4767615435799372763" name="labels" index="3ul5Gx" />
       </concept>
       <concept id="2319506556913310727" name="de.itemis.mps.editor.diagram.layout.structure.Point" flags="ng" index="2VclrF">
@@ -69,20 +71,31 @@
   <node concept="3XSKCS" id="496I9$Ap1ac">
     <property role="TrG5h" value="Test" />
     <node concept="3cFfE$" id="496I9$Ap1ad" role="3XSKCR">
-      <property role="TrG5h" value="NewEntity" />
+      <property role="TrG5h" value="Professor" />
+      <property role="MgdHe" value="true" />
       <node concept="3XSK_K" id="496I9$Ap1ae" role="1WJF2U">
-        <property role="TrG5h" value="test" />
-        <property role="3XSK$r" value="7O0tj5MfXm7/Boolean" />
+        <property role="TrG5h" value="id" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+        <property role="3XSK$k" value="true" />
+      </node>
+      <node concept="3XSK_K" id="4$0UkR0bs_H" role="1WJF2U">
+        <property role="TrG5h" value="name" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+      </node>
+      <node concept="3XSMpq" id="4$0UkR0bs_K" role="1WJF2S">
+        <property role="3X0mqS" value="5sdBcUEW8a7/MANY" />
+        <property role="TrG5h" value="students" />
+        <ref role="3XSMpr" node="f9EWsRrnST" resolve="Student" />
       </node>
     </node>
     <node concept="37mRI7" id="f9EWsRrnSR" role="lGtFl">
       <node concept="37mRIm" id="f9EWsRrnSS" role="37mRID">
         <property role="37mO49" value="4775707422786589325" />
         <node concept="gqqVs" id="f9EWsRrnSQ" role="37mO4d">
-          <property role="gqqTZ" value="492.0" />
-          <property role="gqqTW" value="97.0" />
-          <property role="gqqTX" value="156.0" />
-          <property role="gqqTy" value="56.0" />
+          <property role="gqqTZ" value="408.0" />
+          <property role="gqqTW" value="76.0" />
+          <property role="gqqTX" value="172.0" />
+          <property role="gqqTy" value="98.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -92,7 +105,7 @@
           <property role="gqqTZ" value="72.0" />
           <property role="gqqTW" value="55.0" />
           <property role="gqqTX" value="188.0" />
-          <property role="gqqTy" value="98.0" />
+          <property role="gqqTy" value="119.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -103,7 +116,7 @@
             <property role="3ul5GH" value="label" />
             <node concept="3wpmZ1" id="f9EWsRrnT2" role="3ul5Gz">
               <node concept="2VclrF" id="f9EWsRrnT3" role="3wpmZR">
-                <property role="2Vclpx" value="450.5" />
+                <property role="2Vclpx" value="366.5" />
                 <property role="2Vclpz" value="119.0" />
               </node>
               <node concept="2VclrF" id="f9EWsRrnT4" role="3wpmZP">
@@ -111,6 +124,28 @@
                 <property role="2Vclpz" value="0.0" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="4$0UkR0bs_N" role="37mRID">
+        <property role="37mO49" value="5260460884914719088" />
+        <node concept="2VclpC" id="4$0UkR0bs_M" role="37mO4d">
+          <node concept="3ul5H1" id="4$0UkR0bs_O" role="3ul5Gx">
+            <property role="3ul5GH" value="label" />
+            <node concept="3wpmZ1" id="4$0UkR0bs_P" role="3ul5Gz">
+              <node concept="2VclrF" id="4$0UkR0bs_Q" role="3wpmZR">
+                <property role="2Vclpx" value="281.0" />
+                <property role="2Vclpz" value="173.75" />
+              </node>
+              <node concept="2VclrF" id="4$0UkR0bs_R" role="3wpmZP">
+                <property role="2Vclpx" value="0.0" />
+                <property role="2Vclpz" value="0.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="2VclrF" id="4$0UkR0bsAm" role="2Vcluh">
+            <property role="2Vclpx" value="270.0" />
+            <property role="2Vclpz" value="160.0" />
           </node>
         </node>
       </node>
@@ -124,14 +159,19 @@
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
         <property role="3XSK$k" value="true" />
       </node>
-      <node concept="3XSK_K" id="f9EWsRrnSX" role="1WJF2U">
-        <property role="TrG5h" value="names" />
-        <property role="MeFEw" value="5sdBcUEW8a7/MANY" />
+      <node concept="3XSK_K" id="4$0UkR0bs_D" role="1WJF2U">
+        <property role="TrG5h" value="name" />
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+      </node>
+      <node concept="3XSK_K" id="f9EWsRrnSX" role="1WJF2U">
+        <property role="TrG5h" value="marks" />
+        <property role="MeFEw" value="5sdBcUEW8a7/MANY" />
+        <property role="3XSK$r" value="5sdBcUEVDn3/Int" />
       </node>
       <node concept="3XSMpq" id="f9EWsRrnSY" role="1WJF2S">
         <property role="3X0mqS" value="5sdBcUEW8a7/MANY" />
-        <ref role="3XSMpr" node="496I9$Ap1ad" resolve="NewEntity" />
+        <property role="TrG5h" value="test" />
+        <ref role="3XSMpr" node="496I9$Ap1ad" resolve="Professor" />
       </node>
     </node>
   </node>

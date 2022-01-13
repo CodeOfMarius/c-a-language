@@ -6,6 +6,9 @@
     <use id="5ff6a03f-752e-417c-b647-2bef260388ae" name="modules" version="0" />
     <use id="43bc6b96-a926-4684-8e52-995f0e8f8c34" name="usecase" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="06e7b598-8a98-401b-b5ac-775ed6d0028d" name="usecase_graphical" version="0" />
+    <use id="abcbecdb-820e-494f-a836-36f52cfb4811" name="modules_graphical" version="0" />
+    <use id="c425a4c4-61b7-401f-886c-8125c15f9360" name="entity_graphic" version="0" />
   </languages>
   <imports>
     <import index="xqcy" ref="r:2f0e0056-e2f7-4ba8-ac85-d459187b2415(de.itemis.mps.editor.diagram.runtime.layout)" />
@@ -117,8 +120,8 @@
       <node concept="37mRIm" id="f9EWsRabqQ" role="37mRID">
         <property role="37mO49" value="4775707422796261758" />
         <node concept="gqqVs" id="f9EWsRabqO" role="37mO4d">
-          <property role="gqqTZ" value="190.0" />
-          <property role="gqqTW" value="14.0" />
+          <property role="gqqTZ" value="24.0" />
+          <property role="gqqTW" value="6.0" />
           <property role="gqqTX" value="68.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="0.0;1.0;-1.0;-0.0;0.0;0.0" />
@@ -127,8 +130,8 @@
       <node concept="37mRIm" id="f9EWsRabqS" role="37mRID">
         <property role="37mO49" value="4775707422796261762" />
         <node concept="gqqVs" id="f9EWsRabqR" role="37mO4d">
-          <property role="gqqTZ" value="190.0" />
-          <property role="gqqTW" value="300.0" />
+          <property role="gqqTZ" value="16.0" />
+          <property role="gqqTW" value="115.0" />
           <property role="gqqTX" value="76.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -137,8 +140,8 @@
       <node concept="37mRIm" id="f9EWsRabtZ" role="37mRID">
         <property role="37mO49" value="272938124544882554" />
         <node concept="gqqVs" id="f9EWsRabtY" role="37mO4d">
-          <property role="gqqTZ" value="327.0" />
-          <property role="gqqTW" value="300.0" />
+          <property role="gqqTZ" value="136.0" />
+          <property role="gqqTW" value="115.0" />
           <property role="gqqTX" value="92.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -148,7 +151,7 @@
         <property role="37mO49" value="272938124544882574" />
         <node concept="gqqVs" id="f9EWsRabuj" role="37mO4d">
           <property role="gqqTZ" value="16.0" />
-          <property role="gqqTW" value="14.0" />
+          <property role="gqqTW" value="189.0" />
           <property role="gqqTX" value="107.0" />
           <property role="gqqTy" value="33.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -166,10 +169,15 @@
     <node concept="2DdPI3" id="f9EWsRabue" role="1baSZd">
       <ref role="2DdPI4" node="f9EWsRabud" resolve="application" />
     </node>
-    <node concept="2Dc2kg" id="f9EWsRabut" role="1jrZXN">
+    <node concept="2Dc2kg" id="4$0UkR0pvyz" role="1jrZXN">
       <property role="3KJUL6" value="5IYm1YF0vhs/DEPENDENCY" />
       <ref role="1H1ZwB" node="f9EWsRabue" />
-      <ref role="1H1Zwz" node="496I9$AXU_Y" />
+      <ref role="1H1Zwz" node="496I9$AXUA2" />
+    </node>
+    <node concept="2Dc2kg" id="4$0UkR0pvyJ" role="1jrZXN">
+      <property role="3KJUL6" value="5IYm1YF0vhs/DEPENDENCY" />
+      <ref role="1H1ZwB" node="f9EWsRabue" />
+      <ref role="1H1Zwz" node="f9EWsRabtU" />
     </node>
   </node>
   <node concept="3X0h$2" id="496I9$AXU_X">
@@ -184,7 +192,6 @@
     <property role="asS77" value="true" />
     <property role="TrG5h" value="vacation" />
     <property role="faM8y" value="de" />
-    <property role="$5ROU" value="true" />
     <ref role="3NAnMG" node="496I9$AXUA8" resolve="vacationEntitiySet" />
     <node concept="3X0h$H" id="496I9$BaSbg" role="3X0h$3">
       <ref role="3X0h$M" node="496I9$BaSbf" resolve="NewUseCase" />
@@ -321,6 +328,8 @@
     <property role="3I2F_m" value="99a090bb-02d9-4ba1-8771-c4095729ef8f" />
     <property role="asS77" value="true" />
     <property role="TrG5h" value="application" />
+    <property role="$5ROU" value="true" />
+    <property role="faM8y" value="de" />
   </node>
   <node concept="3X0hAd" id="f9EWsRabuL">
     <property role="2iiYil" value="a36ddfe2-40bc-449f-9dc6-4275ea524596" />

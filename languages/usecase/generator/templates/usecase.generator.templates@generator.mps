@@ -15,10 +15,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="4pwa" ref="33b8d346-7462-44b4-9c9a-5d77a068d3a5/java:org.springframework.data.jpa.repository(usecase.generator/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
-    <import index="afa5" ref="r:cfccec82-df72-4483-9807-88776b4673ab(jetbrains.mps.ide.make.actions)" />
-    <import index="rzg4" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:lombok(usecase/)" />
     <import index="meih" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:org.springframework.stereotype(usecase/)" />
-    <import index="ixnm" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:org.springframework.boot.orm.jpa(usecase/)" />
     <import index="vqrr" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:javax.persistence(usecase/)" />
     <import index="eq25" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:org.springframework.web(usecase/)" />
     <import index="uepr" ref="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:org.springframework.web.bind.annotation(usecase/)" />
@@ -327,7 +324,7 @@
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
       </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -11282,10 +11279,8 @@
           <node concept="2OqwBi" id="27q0WAR8oAp" role="3clFbG">
             <node concept="2OqwBi" id="27q0WAR8mKB" role="2Oq$k0">
               <node concept="1Q6Npb" id="27q0WAR8mDy" role="2Oq$k0" />
-              <node concept="2RRcyG" id="27q0WAR8mPB" role="2OqNvi">
-                <node concept="chp4Y" id="27q0WAR8n26" role="3MHsoP">
-                  <ref role="cht4Q" to="ljcb:4higIaTkPJw" resolve="Module" />
-                </node>
+              <node concept="2RRcyG" id="1pUsvftPZ2T" role="2OqNvi">
+                <ref role="2RRcyH" to="ljcb:4higIaTkPJw" resolve="Module" />
               </node>
             </node>
             <node concept="2es0OD" id="27q0WAR8q$$" role="2OqNvi">

@@ -8,7 +8,7 @@ Die Sprache wird über GitHub verwaltet und das Repository findet sich [hier].
 - Erstellung einer Clean Architecture für eine Java-Web-Anwendung
 - Zwei verschiedene Editoren (grafisch und textuell)
 - Erstellung einer Java-Web-Anwendung
-- Nutzt Spring-Boot
+- Nutzt Spring-Boot und Gradle
 
 ## Erstellte Sprachen
 
@@ -32,6 +32,8 @@ Die Sprache wurde mit Hilfe von MPS erstellt und kann damit in der passenden IDE
 Genutzt wurde dazu MPS in der Version 2021.1.3. Für andere Versionen wurde die Funktionen nicht getestet.
 Die Installationsanweisungen für MPS finden sich unter https://www.jetbrains.com/help/mps/installation-guide.html
 
+Für die Nutzung der Sprache muss zunächst entweder die Sprache selbst geöffnet werden oder das bereitgestellte MPS-Plugin installiert werden. Das MPS-Plugin befindet sich unter /plugins/mps. Dazu sollte das Plugin am besten über den integrierten Plugin-Manager von MPS manuell installiert werden. Für die Nutzung der grafischen Editoren muss das Plugin [Diagram Editor] installiert werden.
+
 Um die Sprache in MPS zu Nutzen muss eine neue Solution erstellt werden, dass die Sprachen jeweils als genutzte Sprachen verwendet. Dabei gilt es zu beachten, dass die Sprachen aufeinander aufbauen. 
 
 - Die Entity-Sprache kann einzelnd genutzt werden.
@@ -39,7 +41,15 @@ Um die Sprache in MPS zu Nutzen muss eine neue Solution erstellt werden, dass di
 - Die Modules-Sprache beinhaltet sowohl die Entity- als auch die Usecase-Sprache.
 - Die gradle-helper-Sprache muss nicht eingebungen werden.
 
-### Allgemeine Bedinung der Editoren
+### Allgemeine Bedienung der Editoren
+Die textuellen Editoren sind ähnlich zu bedienen wie "normale" Editoren in IntelliJ. Die meisten bekannten Konzepte und Tastenkombination könenn daher genutzt werden.
+
+Für den grafischen Editor gilt, dass dieser einige Funktionen. Darunter fallen:
+- Rein- und rauszoomen
+- maximieren der grafischen fläsche
+- "optimale" Anordnung der Elemente
+
+Zudem werden für Elemente weitere Konfigurationsmöglichkeiten im Inspektor (unten rechts in MPS oder IntelliJ)  bereitgestellt. Neue Elemente werden über eine 
 
 ### Enity Editoren
 
@@ -49,7 +59,9 @@ Um die Sprache in MPS zu Nutzen muss eine neue Solution erstellt werden, dass di
 
 ### Troubleshooting bei der Erstellung neuer Lösungen
 
+### Generierung von Quellcode
 
 
    [Marius Wagner]: <https://github.com/CodeOfMarius>
    [hier]: <https://github.com/CodeOfMarius/c-a-language>
+   [Diagram Editor]: <https://plugins.jetbrains.com/plugin/13240-de-itemis-mps-editor-diagram>

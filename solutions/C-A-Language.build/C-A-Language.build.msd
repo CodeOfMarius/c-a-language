@@ -21,6 +21,7 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="1a05c9aa-8b95-466b-b3d9-9d79887a0e3a(C-A-Language.build)" version="0" />
+    <module reference="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" version="0" />
     <module reference="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" version="0" />
   </dependencyVersions>
 </solution>

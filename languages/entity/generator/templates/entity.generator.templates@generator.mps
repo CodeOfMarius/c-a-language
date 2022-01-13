@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="68d1" ref="r:dcffbee8-6938-4294-8c03-2ee3e0bd9c4a(entity.structure)" />
-    <import index="rzg4" ref="f95d8095-3fe6-49dd-95c7-a45487b8d80a/java:lombok(entity/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="wq9u" ref="ec1ab516-e065-4df7-b87a-a6561f2294ad/i:f020202(entity.generator/entity.generator@descriptor)" />

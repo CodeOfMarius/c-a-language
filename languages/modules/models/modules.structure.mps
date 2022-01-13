@@ -39,6 +39,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -73,6 +75,8 @@
     <property role="EcuMT" value="2633721123701216420" />
     <property role="TrG5h" value="Program" />
     <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="program" />
+    <property role="R4oN_" value="program" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2icQQxJDPi_" role="1TKVEi">
       <property role="IQ2ns" value="2633721123701216421" />

@@ -3,13 +3,14 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/entity/entity.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/entity_graphical/entity_graphical.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/gradle_helper/gradle_helper.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/modules/modules.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/modules_graphical/modules_graphical.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/usecase/usecase.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/usecase_graphical/usecase_graphical.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/C-A-Language.build/C-A-Language.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/EntityTest/EntityTest.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/Program/Program.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/ProgramTest/ProgramTest.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mpsplugin.build/mpsplugin.build.msd" folder="" />
     </projectModules>
   </component>
 </project>

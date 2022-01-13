@@ -32,15 +32,20 @@
     <dependency reexport="false">f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</dependency>
     <dependency reexport="false">8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)</dependency>
     <dependency reexport="false">1144260c-e9a5-49a2-9add-39a1a1a7077e(de.itemis.mps.editor.diagram.runtime)</dependency>
+    <dependency reexport="false">abcbecdb-820e-494f-a836-36f52cfb4811(modules_graphical)</dependency>
+    <dependency reexport="false">c425a4c4-61b7-401f-886c-8125c15f9360(entity_graphical)</dependency>
+    <dependency reexport="false">43bc6b96-a926-4684-8e52-995f0e8f8c34(usecase)</dependency>
+    <dependency reexport="false">06e7b598-8a98-401b-b5ac-775ed6d0028d(usecase_graphical)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:f95d8095-3fe6-49dd-95c7-a45487b8d80a:entity" version="0" />
-    <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
+    <language slang="l:c425a4c4-61b7-401f-886c-8125c15f9360:entity_graphical" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
-    <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:5ff6a03f-752e-417c-b647-2bef260388ae:modules" version="0" />
+    <language slang="l:abcbecdb-820e-494f-a836-36f52cfb4811:modules_graphical" version="0" />
     <language slang="l:43bc6b96-a926-4684-8e52-995f0e8f8c34:usecase" version="0" />
+    <language slang="l:06e7b598-8a98-401b-b5ac-775ed6d0028d:usecase_graphical" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -61,8 +66,12 @@
     <module reference="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" version="0" />
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
+    <module reference="c425a4c4-61b7-401f-886c-8125c15f9360(entity_graphical)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="5ff6a03f-752e-417c-b647-2bef260388ae(modules)" version="0" />
+    <module reference="abcbecdb-820e-494f-a836-36f52cfb4811(modules_graphical)" version="0" />
+    <module reference="43bc6b96-a926-4684-8e52-995f0e8f8c34(usecase)" version="0" />
+    <module reference="06e7b598-8a98-401b-b5ac-775ed6d0028d(usecase_graphical)" version="0" />
   </dependencyVersions>
 </solution>
 
