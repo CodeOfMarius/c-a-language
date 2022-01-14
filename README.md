@@ -13,19 +13,30 @@ Die Sprache wird über GitHub verwaltet und das Repository findet sich [hier].
 
 ## Erstellte Sprachen
 
-In dem Repository befinden sich vier Sprachen, von denen drei verschiedene Abstraktionsebenen der Architektur darstellen (entity, usecase und modules) und eine unterstützende Sprache (gradle-helper), die die anderen Sprachen unterstützt.
+In dem Repository befinden sich sieben Sprachen, von denen drei verschiedene Abstraktionsebenen der Architektur darstellen (entity, usecase und modules) und vier unterstützende Sprachen (entity-graphical, usecase-graphical, modules-graphical, gradle-helper), die die anderen Sprachen unterstützen.
+Die grafische Sprachen lagern die für die Erstellung der grafischen Editoren benötigten Plugins in eigene Sprachen aus.
+Dies ist nötig, da diese Plugins nicht mit IntellJ kompatibel sind und daher kann es bei deren Einbindung es zu Problemen kommen.
 
 ### Entity Sprache
 Die Entity-Sprache bietet Konzepte für die Erfassung von Domänenobjekten und kann rudimentäre Java-Objekte erzeugen.
 Es wird ein textueller und ein grafischer Editor für Domänenobjekte bereitgestellt.
 Erzeugt werden in dieser Sprache POJOs für Domänenklassen.
 
+### Entity Graphical Sprache
+Diese Sprache beinhaltet die grafischen Editoren für Entitäten.
+
 ### Usecase Sprache
 Die Usecase-Sprache bietet Konzepte zur Erfassung von Anwendugnsfällen und Adaptern, die auf den Anwendungsfall zugreifen bzw. auf die der Anwendungsfalls zugreift. Dies wird gebündelt in Form eines Gradle-Modul. Das Gradle-Modul kann entweder eigenständig gebaut werden oder im Kontext eines Multi-Modul-Projekts (siehe Modules-sprache) erstellt werden. 
 Erzeugt werden Adapter und Anwendungsälle, sowie passende Interface und Unit-Tests. Zudem wird eine passende build.gradle Datei erzeugt. Um die Konzepte der Clean Architecture einzuhalten werden für jede Adapterschicht eigenständige DTO's generiert, um die Domänenobjekte vor äußreren Einflüssen zu schützen. Passende Mapper für diese DTO's werden zur Verfügung gestellt.
 
+### Usecase Graphical Sprache
+Diese Sprache beinhaltet die grafischen Editoren für Anwendungsfälle und Module.
+
 ### Modules Sprache
 Die Modules-Sprache stellt die Möglichkeit bereit, verschiedene Module zu einem Multi-Gradle-Projekt zu bündeln. Es werden passende build.gradle und settings.gradle erzeugt.
+
+### Usecase Graphical Sprache
+Diese Sprache beinhaltet die grafischen Editoren für Programme.
 
 ### gradle-helper Sprache
 Diese Sprache soll nicht aktiv von den Nutzern der Sprache verwendet werden. Sie beinhaltet Konzepte, die die Erzeugung der Gradle-Dateien unterstützen, da diese Elemente aus technischen Gründen Root-Elemente sein müssen, wurden diese Konzepte in dieser Sprache ausgelagert.
@@ -40,8 +51,11 @@ Für die Nutzung der Sprache muss zunächst entweder die Sprache selbst geöffne
 Um die Sprache in MPS zu Nutzen muss eine neue Solution erstellt werden, dass die Sprachen jeweils als genutzte Sprachen verwendet. Dabei gilt es zu beachten, dass die Sprachen aufeinander aufbauen. 
 
 - Die Entity-Sprache kann einzelnd genutzt werden.
+- Die Entity-Graphical-Sprache erweitert die Entity-Sprache
 - Die Usecase-Sprache beinhaltet die Entitiy-Sprache.
+- Die Usecase-Graphical-Sprache erweitert die Usecase-Sprache
 - Die Modules-Sprache beinhaltet sowohl die Entity- als auch die Usecase-Sprache.
+- Die Modules-Graphical-Sprache erweitert die Modules-Sprache
 - Die gradle-helper-Sprache muss nicht eingebungen werden.
 
 ### Allgemeine Bedienung der Editoren

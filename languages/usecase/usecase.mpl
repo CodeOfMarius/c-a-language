@@ -4,7 +4,46 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/ressources" type="java_classes">
+    <modelRoot contentPath="${module}/ressources/assertj-core.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/jakarta.persistence-api.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/junit-jupiter-api.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/lombok.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/mockito-core.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/mockito-junit-jupiter.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-boot-autoconfigure.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-boot-test.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-boot.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-context.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-core.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-data-commons.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-data-jpa.jar!/" type="java_classes">
+      <sourceRoot location="." />
+    </modelRoot>
+    <modelRoot contentPath="${module}/ressources/spring-web.jar!/" type="java_classes">
       <sourceRoot location="." />
     </modelRoot>
   </models>
@@ -13,14 +52,29 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:org.mockito.junit(usecase/)" />
+    <model modelUID="43bc6b96-a926-4684-8e52-995f0e8f8c34/java:javax.persistence(usecase/)" />
+  </accessoryModels>
   <generators>
-    <generator alias="main" namespace="usecase.generator" uuid="33b8d346-7462-44b4-9c9a-5d77a068d3a5">
+    <generator alias="main" namespace="usecase.generator" uuid="33b8d346-7462-44b4-9c9a-5d77a068d3a5" generate-templates="true">
       <models>
         <modelRoot contentPath="${module}/generator" type="default">
           <sourceRoot location="templates" />
         </modelRoot>
         <modelRoot contentPath="${module}/ressources/spring-data-jpa.jar!/" type="java_classes">
+          <sourceRoot location="." />
+        </modelRoot>
+        <modelRoot contentPath="${module}/ressources/assertj-core.jar!/" type="java_classes">
+          <sourceRoot location="." />
+        </modelRoot>
+        <modelRoot contentPath="${module}/ressources/jakarta.persistence-api.jar!/" type="java_classes">
+          <sourceRoot location="." />
+        </modelRoot>
+        <modelRoot contentPath="${module}/ressources/junit-jupiter-api.jar!/" type="java_classes">
+          <sourceRoot location="." />
+        </modelRoot>
+        <modelRoot contentPath="${module}/ressources/spring-data-commons.jar!/" type="java_classes">
           <sourceRoot location="." />
         </modelRoot>
       </models>
@@ -33,7 +87,7 @@
       <dependencies>
         <dependency reexport="false">f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)</dependency>
         <dependency reexport="false">ec1ab516-e065-4df7-b87a-a6561f2294ad(entity.generator)</dependency>
-        <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+        <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
         <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
         <dependency reexport="false">86ef8290-12bb-4ca7-947f-093788f263a9(jetbrains.mps.lang.project)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
@@ -99,7 +153,7 @@
   <dependencies>
     <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="true">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>

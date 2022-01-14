@@ -10,7 +10,8 @@
       <modulePath path="$PROJECT_DIR$/languages/usecase/usecase.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/usecase_graphical/usecase_graphical.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/C-A-Language.build/C-A-Language.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/mpsplugin.build/mpsplugin.build.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/Presentation/Presentation.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/mps-plugin.build/mps-plugin.build.msd" folder="" />
     </projectModules>
   </component>
 </project>
