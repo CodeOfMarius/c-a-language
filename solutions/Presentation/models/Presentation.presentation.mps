@@ -29,6 +29,7 @@
         <child id="2940053833066453976" name="attributes" index="1WJF2U" />
       </concept>
       <concept id="6272842267441927614" name="entity.structure.Attribute" flags="ng" index="3XSK_K">
+        <property id="2771838607458907687" name="cardinality" index="MeFEw" />
         <property id="6272842267441927642" name="primary" index="3XSK$k" />
         <property id="6272842267441927637" name="type" index="3XSK$r" />
       </concept>
@@ -111,6 +112,11 @@
         <property role="TrG5h" value="id" />
         <property role="3XSK$r" value="5sdBcUEVDn2/String" />
         <property role="3XSK$k" value="true" />
+      </node>
+      <node concept="3XSK_K" id="4enxwC9oSMI" role="1WJF2U">
+        <property role="TrG5h" value="names" />
+        <property role="3XSK$r" value="5sdBcUEVDn2/String" />
+        <property role="MeFEw" value="5sdBcUEW8a7/MANY" />
       </node>
     </node>
   </node>

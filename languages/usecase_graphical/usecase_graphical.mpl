@@ -48,7 +48,6 @@
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
         <module reference="f95d8095-3fe6-49dd-95c7-a45487b8d80a(entity)" version="0" />
-        <module reference="52b81ac7-93fd-4e9e-b972-4995882da6d4(jetbrains.mps.baseLanguage.references.runtime)" version="0" />
         <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
         <module reference="43bc6b96-a926-4684-8e52-995f0e8f8c34(usecase)" version="0" />
         <module reference="06e7b598-8a98-401b-b5ac-775ed6d0028d(usecase_graphical)" version="0" />

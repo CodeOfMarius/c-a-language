@@ -218,7 +218,7 @@
       </node>
     </node>
     <node concept="2sgV4H" id="2vxBilFvwTe" role="1l3spa">
-      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" />
+      <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="2vxBilFvwTf" role="2JcizS">
         <ref role="398BVh" node="2vxBilFvwTd" resolve="mps_home" />
       </node>
@@ -237,7 +237,7 @@
           </node>
         </node>
         <node concept="m$_wl" id="2vxBilFvwUc" role="39821P">
-          <ref role="m_rDy" node="2vxBilFvwTV" resolve="c-a-language" />
+          <ref role="m_rDy" node="2vxBilFvwTV" resolve="caLanguage" />
           <node concept="pUk6x" id="2vxBilFvwUd" role="pUk7w" />
           <node concept="398223" id="2vxBilFvzsn" role="39821P">
             <node concept="28jJK3" id="7fSgmZz$NDB" role="39821P">
@@ -489,7 +489,7 @@
         <ref role="m$f5T" node="2vxBilFvwTU" resolve="c-a-language" />
       </node>
       <node concept="m$_yC" id="2vxBilFvwU1" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" />
+        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
       </node>
       <node concept="m$_yC" id="2vxBilFvx$1" role="m$_yJ">
         <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />

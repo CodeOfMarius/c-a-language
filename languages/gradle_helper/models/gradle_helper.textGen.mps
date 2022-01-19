@@ -144,7 +144,7 @@
                       <node concept="lc7rE" id="5m962Il60Q2" role="3cqZAp">
                         <node concept="2BGw6n" id="5m962ImhEVK" role="lcghm" />
                         <node concept="la8eA" id="5m962Il60Su" role="lcghm">
-                          <property role="lacIc" value="implemenation project(':" />
+                          <property role="lacIc" value="implementation project(':" />
                         </node>
                         <node concept="l9hG8" id="5m962Il61pP" role="lcghm">
                           <node concept="2OqwBi" id="5m962Il61$h" role="lb14g">
@@ -203,29 +203,35 @@
                   </node>
                   <node concept="l8MVK" id="5m962Imh$rA" role="lcghm" />
                 </node>
-                <node concept="3clFbJ" id="496I9$BUhmf" role="3cqZAp">
-                  <node concept="3clFbS" id="496I9$BUhmh" role="3clFbx">
-                    <node concept="lc7rE" id="496I9$BUhUT" role="3cqZAp">
-                      <node concept="2BGw6n" id="496I9$BUhUU" role="lcghm" />
-                      <node concept="la8eA" id="496I9$BUhUV" role="lcghm">
-                        <property role="lacIc" value="runtimeOnly 'com.h2database:h2''" />
-                      </node>
-                      <node concept="l8MVK" id="496I9$BUhUW" role="lcghm" />
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="496I9$BUhNp" role="3clFbw">
-                    <node concept="117lpO" id="496I9$BUhG9" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="496I9$BUhUs" role="2OqNvi">
-                      <ref role="3TsBF5" to="ubua:496I9$BUhmN" resolve="main" />
-                    </node>
-                  </node>
-                </node>
               </node>
               <node concept="2OqwBi" id="5m962Il62F8" role="3clFbw">
                 <node concept="117lpO" id="5m962Il62F9" role="2Oq$k0" />
                 <node concept="3TrcHB" id="5m962Il62Fa" role="2OqNvi">
                   <ref role="3TsBF5" to="ubua:5m962Il627x" resolve="database" />
                 </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="496I9$BUhmf" role="3cqZAp">
+              <node concept="3clFbS" id="496I9$BUhmh" role="3clFbx">
+                <node concept="lc7rE" id="496I9$BUhUT" role="3cqZAp">
+                  <node concept="2BGw6n" id="496I9$BUhUU" role="lcghm" />
+                  <node concept="la8eA" id="496I9$BUhUV" role="lcghm">
+                    <property role="lacIc" value="runtimeOnly 'com.h2database:h2''" />
+                  </node>
+                  <node concept="l8MVK" id="496I9$BUhUW" role="lcghm" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="496I9$BUhNp" role="3clFbw">
+                <node concept="117lpO" id="496I9$BUhG9" role="2Oq$k0" />
+                <node concept="3TrcHB" id="496I9$BUhUs" role="2OqNvi">
+                  <ref role="3TsBF5" to="ubua:496I9$BUhmN" resolve="main" />
+                </node>
+              </node>
+            </node>
+            <node concept="lc7rE" id="4enxwCa0XwY" role="3cqZAp">
+              <node concept="2BGw6n" id="4enxwCa0X$X" role="lcghm" />
+              <node concept="la8eA" id="4enxwCa0X_z" role="lcghm">
+                <property role="lacIc" value="testImplementation 'org.springframework.boot:spring-boot-starter-test'" />
               </node>
             </node>
           </node>

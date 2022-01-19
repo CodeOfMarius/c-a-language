@@ -593,7 +593,7 @@
           </node>
         </node>
         <node concept="2xQOud" id="6Mu$KpAkJqH" role="1PNbKK">
-          <ref role="2xQOue" node="JIGctjJ0qZ" />
+          <ref role="2xQOue" node="JIGctjJ0qZ" resolve="Arrow" />
           <node concept="3cmrfG" id="6Mu$KpAkJqL" role="1xbcaF">
             <property role="3cmrfH" value="1" />
           </node>
