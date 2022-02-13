@@ -216,7 +216,7 @@
                 <node concept="lc7rE" id="496I9$BUhUT" role="3cqZAp">
                   <node concept="2BGw6n" id="496I9$BUhUU" role="lcghm" />
                   <node concept="la8eA" id="496I9$BUhUV" role="lcghm">
-                    <property role="lacIc" value="runtimeOnly 'com.h2database:h2''" />
+                    <property role="lacIc" value="runtimeOnly 'com.h2database:h2'" />
                   </node>
                   <node concept="l8MVK" id="496I9$BUhUW" role="lcghm" />
                 </node>
@@ -233,6 +233,7 @@
               <node concept="la8eA" id="4enxwCa0X_z" role="lcghm">
                 <property role="lacIc" value="testImplementation 'org.springframework.boot:spring-boot-starter-test'" />
               </node>
+              <node concept="l8MVK" id="7Yl55yqGE_S" role="lcghm" />
             </node>
           </node>
         </node>
